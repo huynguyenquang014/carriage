@@ -1,0 +1,11 @@
+<svg id="レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Rectangle">
+    <rect id="Rectangle_427" data-name="Rectangle 427" width="48" height="48" fill="none"/>
+  </g>
+  <g id="icon_data">
+    <line id="Line_161" data-name="Line 161" x2="44" transform="translate(2 42)" fill="none" stroke="#94913a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_52" data-name="Path 52" d="M12,35V14H4V35" fill="none" stroke="#c1bf86" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_53" data-name="Path 53" d="M28,35V21H20V35" fill="none" stroke="#c1bf86" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_54" data-name="Path 54" d="M44,35V5H36V35" fill="none" stroke="#c1bf86" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

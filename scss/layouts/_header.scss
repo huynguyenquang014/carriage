@@ -1,0 +1,81 @@
+#header{
+    .header-desktop{
+        padding: 29px 104px 29px 28px;
+        @include br747{
+            display: none;
+        }
+        .container-fluid{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .block-right{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .logo{
+            display: block;
+            padding-bottom: 16px;
+        }
+        .nav-menu{
+            @include br971{
+                display: none;
+            }
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                li{
+                    &.active a{
+                        color: $main-color !important;
+                    }
+                    a{
+                        color: #1E1F21;
+                        font-size: 14px;
+                        font-family: "TTNorms-Bold";
+                        letter-spacing: 1px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        padding: 0px 11.5px;
+                        &:hover{
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+        .toggle-button{
+            width: 100px;
+            height: 100px;
+            background-color: #1E1F21;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 10;
+        }
+    }
+    .header-mobile{
+        display: none;
+        padding: 18px 0 21px;
+        .container{
+            padding: 0 20px;
+        }
+        @include br747{
+            display: block;
+        }
+        .toggle-button{
+            width: 60px;
+            height: 60px;
+            background-color: #1E1F21;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 10;
+        }
+    }
+}

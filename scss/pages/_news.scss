@@ -1,0 +1,97 @@
+#p-news {
+    .page-title {
+        margin-top: 84px;
+        margin-bottom: 57px;
+        @include br747 {
+            margin-top: 50px;
+            margin-bottom: 55px;
+        }
+        .c-title {
+            h3 {
+                font-size: 50px;
+                line-height: 42px;
+                letter-spacing: 7.5px;
+                margin-bottom: 15px;
+                @include br747 {
+                    font-size: 32px;
+                    margin-bottom: 0;
+                    letter-spacing: 3px;
+                }
+            }
+            p {
+                font-size: 18px;
+                letter-spacing: 2px;
+                @include br747 {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    .b-news {
+        margin-bottom: 130px;
+        @include br747 {
+            margin-bottom: 78px;
+        }
+        .inner {
+            width: 758px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            ul {
+                li {
+                    display: flex;
+                    border-bottom: 1px solid #BEBEBE;
+                    padding: 22px 0 18px;
+                    position: relative;
+                    @include br747 {
+                        display: block;
+                        padding: 7px 0 15px;
+                    }
+                    .label {
+                        width: 109px;
+                        padding-left: 20px;
+                        margin-right: 20px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 41px;
+                        color: $main-color;
+                        letter-spacing: 1.5px;
+                        @include br747 {
+                            font-size: 12px;
+                            padding-left: 0;
+                            margin-bottom: -5px;
+                        }
+                    }
+                    .value {
+                        font-size: 15px;
+                        line-height: 42px;
+                        letter-spacing: 1.6px;
+                        font-weight: 400;
+                        @include br747 {
+                            font-size: 13px;
+                            line-height: 26px;
+                        }
+                        .text {
+                            color: #000000;
+                            letter-spacing: 1.5px;
+                            @include br747 {
+                                font-size: 13px;
+                            }
+                        }
+                        a {
+                            display: flex;
+                            position: absolute;
+                            top: calc(50% + 2px);
+                            transform: translateY(-50%);
+                            right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .c-pagination{
+        margin-top: 55px;
+    }
+}

@@ -1,0 +1,132 @@
+#p-recruit {
+    .page-title {
+        margin-top: 84px;
+        margin-bottom: 29px;
+        @include br747 {
+            margin-top: 50px;
+        }
+        .c-title {
+            h3 {
+                font-size: 50px;
+                line-height: 42px;
+                letter-spacing: 7.5px;
+                margin-bottom: 15px;
+                @include br747 {
+                    font-size: 32px;
+                    margin-bottom: 0;
+                    letter-spacing: 3px;
+                }
+            }
+            p {
+                font-size: 18px;
+                letter-spacing: 2px;
+                @include br747 {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .blog-desc {
+            width: 697px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 45px;
+            line-height: 32px;
+        }
+    }
+    .b-employment {
+        margin-bottom: 130px;
+        @include br747 {
+            margin-bottom: 78px;
+        }
+        .inner {
+            width: 698px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            ul {
+                li {
+                    display: flex;
+                    padding: 25px 0 22px;
+                    position: relative;
+                    border-bottom: 1px solid #E0E0E0;
+                    @include br747 {
+                        display: block;
+                        padding: 7px 0 15px;
+                    }
+                    .label {
+                        width: 108px;
+                        padding-left: 20px;
+                        margin-right: 20px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 35px;
+                        color: $main-color;
+                        letter-spacing: 1.5px;
+                        @include br747 {
+                            font-size: 12px;
+                            padding-left: 0;
+                            margin-bottom: -5px;
+                        }
+                    }
+                    .value {
+                        font-size: 15px;
+                        line-height: 32px;
+                        letter-spacing: 1.7px;
+                        padding-top: 2px;
+                        @include br747 {
+                            font-size: 13px;
+                            line-height: 26px;
+                        }
+                        span {
+                            font-size: 14px;
+                        }
+                        p {
+                            margin-bottom: 0;
+                        }
+                        .value-list {
+                            font-size: 13px;
+                            line-height: 24px;
+                            margin-top: 3px;
+                            margin-bottom: 4px;
+                            letter-spacing: 1.4px;
+                        }
+                        a {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: $main-color;
+                            letter-spacing: 2.3px;
+                            @include br747 {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .group-btn {
+            margin-top: 67px;
+            max-width: 100%;
+            width: 425px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            @include br747 {
+                display: block;
+            }
+            a {
+                font-size: 18px;
+                height: 57px;
+                font-weight: 500;
+                width: 100%;
+                letter-spacing: 2.8px;
+                svg {
+                    right: 11px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,431 @@
+#p-case-study-details {
+    #header .header-desktop {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        .nav-menu ul li a {
+            color: #fff;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+    .container {
+        @include br747 {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .b-big-mv {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.25);
+            z-index: 1;
+        }
+        img {
+            width: 100%;
+            // height: 100vh;
+            object-fit: cover;
+            @include br747 {
+                height: 194px;
+            }
+        }
+        .content {
+            color: #fff;
+            position: absolute;
+            left: 123px;
+            top: calc(50% + 12px);
+            transform: translateY(-50%);
+            z-index: 2;
+            @include br747 {
+                left: 31px;
+                top: 50%;
+            }
+            .title {
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 42px;
+                font-family: "Roboto";
+                letter-spacing: 8px;
+                margin-bottom: 16px;
+                @include br971 {
+                    font-size: 40px;
+                    line-height: 56px;
+                    letter-spacing: 1px;
+                }
+                @include br747 {
+                    font-size: 25px;
+                    line-height: 25px;
+                    margin-bottom: 8px;
+                    letter-spacing: 3.8px;
+                }
+            }
+            .desc {
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 1.8px;
+                position: relative;
+                display: inline-block;
+                margin-bottom: 7px;
+                padding-left: 50px;
+                @include br747 {
+                    font-size: 12px;
+                    letter-spacing: 0.8px;
+                    margin-bottom: 5px;
+                    margin-left: 3px;
+                    padding-left: 34px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 40px;
+                    height: 1px;
+                    background-color: #fff;
+                    @include br747 {
+                        width: 26px;
+                    }
+                }
+            }
+        }
+    }
+    .b-case-details {
+        .wrap {
+            background: #f4f4eb;
+            padding-bottom: 56px;
+            .col-left {
+                position: relative;
+                padding-right: 9px;
+                .alert {
+                    background-color: $main-color;
+                    color: #fff;
+                    max-width: 100%;
+                    padding: 95px 32px 93px;
+                    top: -52px;
+                    z-index: 1;
+                    border-radius: 0;
+                    border: none;
+                    @include br971 {
+                        padding: 52px 0 61px 36px;
+                    }
+                    @include br747 {
+                        top: -29px;
+                        padding: 23px 0 31px 36px;
+                    }
+                    .content {
+                        font-size: 24px;
+                        font-weight: 600;
+                        letter-spacing: 3.5px;
+                        line-height: 34px;
+                        @include br747 {
+                            font-size: 16px;
+                        }
+                    }
+                    .name-cty {
+                        position: relative;
+                        padding-left: 72px;
+                        margin-top: 11px;
+                        font-size: 12px;
+                        letter-spacing: 1.8px;
+                        @include br747 {
+                            padding-left: 32px;
+                            font-size: 11px;
+                        }
+                        &::after {
+                            content: "";
+                            width: 58px;
+                            height: 1px;
+                            background: #fff;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            @include br747 {
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .profile {
+                margin-top: 78px;
+                display: flex;
+                @include br971 {
+                    justify-content: center;
+                    margin-top: 0;
+                }
+                @include br747 {
+                    display: block;
+                }
+                .img-profile {
+                    position: relative;
+                    margin-right: 28px;
+                    @include br747 {
+                        text-align: center;
+                    }
+                    .decs {
+                        background: #fff;
+                        text-align: center;
+                        position: absolute;
+                        top: calc(50% - 4px);
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 171px;
+                        line-height: 26px;
+                        padding: 17px 0;
+                        letter-spacing: 1.1px;
+                    }
+                }
+                .content {
+                    @include br747 {
+                        margin-top: 25px;
+                    }
+                    .c-title {
+                        text-align: left;
+                        display: inline-flex;
+                        gap: 13px;
+                        @include br747 {
+                            margin-bottom: 27px;
+                        }
+                        p {
+                            font-size: 16px;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .infor {
+                        width: 334px;
+                        margin-top: -38px;
+                        max-width: 100%;
+                        letter-spacing: 1.45px;
+                        line-height: 26px;
+                        padding-right: 11.5px;
+                        @include br971 {
+                            width: auto;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .inner {
+            width: 698px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            margin-top: 122px;
+            @include br971 {
+                padding: 0 15px;
+                margin-top: 76px;
+            }
+            .c-title {
+                h3 {
+                    font-size: 30px;
+                    line-height: 42px;
+                    border-bottom: 1px solid #e0e0e0;
+                    letter-spacing: 3px;
+                    padding-bottom: 18px;
+                    text-align: left;
+                    @include br971 {
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+                    @include br747 {
+                        font-size: 16px;
+                    }
+                }
+                p {
+                    text-align: left;
+                    position: relative;
+                    font-size: 15px;
+                    padding-left: 52px;
+                    letter-spacing: 2.2px;
+                    margin-top: 27px;
+                    @include br971 {
+                        font-size: 13px;
+                    }
+                    @include br747 {
+                        padding-left: 32px;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 1px;
+                        background-color: $main-color;
+                        width: 36px;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        @include br747 {
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+            .content {
+                font-size: 15px;
+                line-height: 30px;
+                letter-spacing: 2.4px;
+                margin-top: -16px;
+                @include br971 {
+                    font-size: 13px;
+                }
+            }
+            .content-img {
+                margin: 30px 0 36px 0;
+            }
+            .c-title-custom {
+                margin-top: 87px;
+                h3 {
+                    white-space: nowrap;
+                    @include br555 {
+                        white-space: unset;
+                        span {
+                            margin-left: 15px;
+                        }
+                    }
+                    span {
+                        margin-left: 30px;
+                        @include br555 {
+                            margin-left: 15px;
+                        }
+                    }
+                }
+                p {
+                    margin-top: 26px;
+                }
+                .content {
+                    margin-top: -27px;
+                }
+                .content-img {
+                    margin-bottom: 50px;
+                }
+            }
+            .c-title-custom-2 {
+                margin-top: 120px;
+                @include br747 {
+                    margin-top: 80px;
+                }
+                .c-title {
+                    p {
+                        margin-top: 20px;
+                    }
+                }
+                .content {
+                    margin-top: -22px;
+                }
+            }
+        }
+        .custom-group-btn {
+            width: 300px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 57px;
+            .btn {
+                font-size: 18px;
+                @include br747 {
+                    font-size: 14px;
+                }
+            }
+        }
+        .related-case {
+            margin-top: 133px;
+            @include br747 {
+                margin-top: 90px;
+            }
+            .wrap {
+                padding-bottom: 50px;
+                .c-title {
+                    padding-top: 78px;
+                    h3 {
+                        letter-spacing: 3px;
+                    }
+                    p {
+                        margin-top: -8px;
+                        letter-spacing: -1px;
+                    }
+                }
+                .content {
+                    width: 900px;
+                    max-width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: flex;
+                    gap: 22px;
+                    justify-content: center;
+                    padding-top: 4px;
+                    @include br555 {
+                        display: block;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    .row.gutter-30 > div {
+                        padding-left: 10.5px;
+                        padding-right: 10.5px;
+                        @include br971 {
+                            padding-left: 7.5px;
+                            padding-right: 7.5px;
+                        }
+                    }
+                    .box {
+                        // img {
+                        //     width: 100%;
+                        //     @include br555 {
+                        //         width: 90%;
+                        //     }
+                        // }
+                        @include br971 {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .content-box {
+                            font-size: 18px;
+                            font-weight: 400;
+                            letter-spacing: 2.7px;
+                            margin-top: 15px;
+                            line-height: 26px;
+                            @include br971 {
+                                font-size: 13px;
+                                line-height: 18px;
+                                text-align: left;
+                                br {
+                                    display: none;
+                                }
+                            }
+                            p {
+                                letter-spacing: 1.8px;
+                                margin-top: 3px;
+                                font-size: 12px;
+                                color: #949048;
+                                @include br971 {
+                                    font-size: 10px;
+                                }
+                                @include br747 {
+                                    margin-top: 6px;
+                                    font-size: 10px;
+                                    line-height: 13px;
+                                    letter-spacing: 1.5px;
+                                    span {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

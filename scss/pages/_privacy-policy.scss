@@ -1,0 +1,72 @@
+#p-privacy-policy {
+    .page-title {
+        margin-top: 84px;
+        margin-bottom: 60px;
+        @include br747 {
+            margin-top: 50px;
+            margin-bottom: 55px;
+        }
+        .c-title {
+            h3 {
+                font-size: 50px;
+                line-height: 42px;
+                letter-spacing: 7.5px;
+                margin-bottom: 15px;
+                @include br747 {
+                    font-size: 32px;
+                    margin-bottom: 0;
+                    letter-spacing: 3px;
+                }
+            }
+            p {
+                font-size: 18px;
+                letter-spacing: 2px;
+                @include br747 {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    .b-personal {
+        margin-bottom: 130px;
+        @include br747 {
+            margin-bottom: 78px;
+        }
+        .inner {
+            width: 698px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            .content {
+                margin-bottom: 36px;
+                letter-spacing: 1.5px;
+                b{
+                    font-size: 18px;
+                    color: $main-color;
+                }
+                &:nth-child(2) {
+                    margin-bottom: 44px;
+                }
+                &:nth-child(3) {
+                    margin-bottom: 47px;
+                }
+                &:nth-child(4) {
+                    margin-bottom: 35px;
+                }
+                @include br747 {
+                    font-size: 13px;
+                    line-height: 26px;
+                }
+            }
+            .content-right {
+                text-align: end;
+                margin-top: 53px;
+                font-size: 13px;
+                line-height: 26px;
+                letter-spacing: 1.2px;
+                margin-bottom: -4px;
+            }
+        }
+    }
+}

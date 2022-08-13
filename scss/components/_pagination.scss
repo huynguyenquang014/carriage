@@ -1,0 +1,42 @@
+.c-pagination{
+    display: flex;
+    justify-content: center;
+    ul{
+        display: flex;
+        li{
+            margin: 0 5px;
+            &.active a{
+                color: #fff;
+                border-color: $main-color;
+                background-color: $main-color;
+            }
+            a{
+                font-family: "Roboto";
+                font-size: 20px;
+                border: 1px solid #D5D5D5;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $main-color;
+                @include br747{
+                    width: 30px;
+                    height: 30px;
+                    font-size: 14px;
+                }
+                &.btn-next{
+                    margin-left: 10px;
+                }
+                &:hover{
+                    color: #fff;
+                    border-color: $main-color;
+                    background-color: $main-color;
+                    line{
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

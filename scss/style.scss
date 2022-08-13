@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/***** mixin *****/
+@import "mixin/variables";
+@import "mixin/mediaquery";
+@import "mixin/space";
+
+/***** base *****/
+@import "base/media";
+@import "base/base";
+
+/***** components *****/
+@import "components/button";
+@import "components/title";
+@import "components/checkbox";
+@import "components/pagination";
+@import "components/preloader";
+
+/***** fonts *****/
+@import "fonts/fonts";
+
+/**** layouts ****/
+@import "layouts/header";
+@import "layouts/footer";
+
+/***** pages *****/
+@import "pages/top";
+@import "pages/about";
+@import "pages/service";
+@import "pages/service-02";
+@import "pages/service-01"; 
+@import "pages/job-details.scss";
+@import "pages/search";
+@import "pages/faq";
+@import "pages/blog";
+@import "pages/blog-details";
+@import "pages/case-study";
+@import "pages/privacy-policy";
+@import "pages/recruit";
+@import "pages/new-job-added";
+@import "pages/news";
+@import "pages/case-study-details";

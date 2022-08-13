@@ -1,0 +1,72 @@
+#p-new-job-added {
+    .page-title {
+        margin-top: 65px;
+        margin-bottom: 130px;
+        @include br747 {
+            margin-top: 50px;
+            margin-bottom: 55px;
+        }
+        .inner {
+            width: 698px;
+            max-width: 100%;
+            margin: auto;
+            .c-title {
+                margin-bottom: 48px;
+                text-align: left;
+                @include br747{
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 12px;
+                    letter-spacing: 1.8px;
+                    @include br747 {
+                        letter-spacing: 1px;
+                    }
+                }
+                h3 {
+                    font-size: 38px;
+                    letter-spacing: 3.9px;
+                    margin-bottom: 15px;
+                    margin-top: -18px;
+                    font-family: "Noto Sans CJK JP";
+                    @include br747 {
+                        font-size: 22px;
+                        margin-bottom: 0;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+            .content {
+                font-size: 15px;
+                line-height: 30px;
+                font-weight: 400;
+                letter-spacing: 2.3px;
+                @include br747 {
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .group-btn {
+            margin-top: 64px;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            @include br747{
+                margin-top: 30px;
+            }
+            .btn {
+                height: 57px;
+                font-size: 18px;
+                svg {
+                    left: 11px;
+                }
+                @include br747 {
+                    font-size: 14px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}

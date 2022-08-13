@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body id="p-search">
+    <!-- loader -->
+    <div class="pre-loader">
+        <div class="loader">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <div id="header">
+        <div class="header-desktop">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <a href="./top.html" class="logo">
+                            <img src="./images/logo.svg" alt="carriage">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div class="block-right">
+                            <div class="nav-menu">
+                                <ul>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./service.html">Service</a></li>
+                                    <li><a href="./case.html">Case</a></li>
+                                    <li><a href="./news.html">News</a></li>
+                                    <li><a href="./blog.html">Blog</a></li>
+                                    <li><a href="./faq.html">Faq</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="toggle-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36.019" height="9" viewBox="0 0 36.019 9">
+                                    <g id="Group_255" data-name="Group 255" transform="translate(-1242.5 -29.5)">
+                                      <line id="Line_105" data-name="Line 105" x2="36.019" transform="translate(1242.5 30)" fill="none" stroke="#fff" stroke-width="1"/>
+                                      <line id="Line_106" data-name="Line 106" x2="36.019" transform="translate(1242.5 38)" fill="none" stroke="#fff" stroke-width="1"/>
+                                    </g>
+                                </svg> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href="./top.html" class="logo-mobile">
+                            <img src="./images/logo-header-mobile.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="toggle-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.891" height="5.64" viewBox="0 0 20.891 5.64">
+                            <g id="Group_255" data-name="Group 255" transform="translate(0 0.5)">
+                                <line id="Line_105" data-name="Line 105" x2="20.891" transform="translate(0 0)" fill="none" stroke="#fff" stroke-width="1"/>
+                                <line id="Line_106" data-name="Line 106" x2="20.891" transform="translate(0 4.64)" fill="none" stroke="#fff" stroke-width="1"/>
+                            </g>
+                        </svg>                              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    
+    <!-- main content -->
+    <div class="main-content">
+        <div class="page-title">
+            <div class="container">
+                <div class="c-title">
+                    <h3>SEARCH</h3>
+                    <p>求人検索</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-filter-by">
+            <div class="container">
+                <h4 class="filter-title">条件から絞り込む</h4>
+
+                <section class="occupation">
+                    <h5 class="label">職種</h5>
+                    <div class="filter-list">
+                        <ul>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c01">
+                                    <label for="c01">CRM</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c02">
+                                    <label class="text-small" for="c02">オペレーション・
+                                        リテールエクセレン
+                                        ス</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c03">
+                                    <label class="text-small" for="c03">カスタマーセンター・サービス</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c04">
+                                    <label for="c04">経理・FP＆A</label>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c05">
+                                    <label for="c05">生産管理・SCM</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c06">
+                                    <label for="c06">経営企画</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c07">
+                                    <label for="c07">トレーナー</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c08">
+                                    <label for="c08">DB</label>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c09">
+                                    <label class="text-small" for="c09">ストアプランニング・プロジェクトマネージャー</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c10">
+                                    <label for="c10">デザイナー</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c11">
+                                    <label for="c11">パタンナー</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c12">
+                                    <label for="c12">MD</label>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c13">
+                                    <label class="text-small" for="c13">VMD</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c14">
+                                    <label for="c14">バイヤー</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c15">
+                                    <label for="c15">プレス・販促</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c16">
+                                    <label for="c16">営業</label>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c17">
+                                    <label for="c17">店舗管理・SV</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c18">
+                                    <label for="c18">店長・販売</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c19">
+                                    <label for="c19">貿易・事務</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c20">
+                                    <label for="c20">人事</label>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="c21">
+                                    <label for="c21">その他</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <div class="line-dashed"></div>
+
+                <section class="area">
+                    <h5 class="label">エリア</h5>
+                    <div class="filter-list">
+                        <ul>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="a01">
+                                    <label for="a01">東日本</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="a02">
+                                    <label class="text-small" for="a02">東京</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="a03">
+                                    <label class="text-small" for="a03">神奈川</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="a04">
+                                    <label for="a04">名古屋・愛知</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="a05">
+                                    <label for="a05">その他東日本</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="a06">
+                                    <label for="a06">西日本</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="a07">
+                                    <label for="a07">大阪</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="a08">
+                                    <label for="a08">兵庫</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="a09">
+                                    <label class="text-small" for="a09">その他関西</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="a10">
+                                    <label for="a10">その他西日本</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <div class="line-dashed"></div>
+
+                <section class="desired-salary">
+                    <h5 class="label">希望年収</h5>
+                    <div class="filter-list">
+                        <ul>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="d01">
+                                    <label for="d01">300〜400万円</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="d02">
+                                    <label for="d02">400〜500万円</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="d03">
+                                    <label for="d03">500〜600万円</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="d04">
+                                    <label for="d04">600万円以上</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <div class="line-dashed"></div>
+
+                <section class="working-conditions">
+                    <h5 class="label">勤務条件</h5>
+                    <div class="filter-list">
+                        <ul>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="w01">
+                                    <label for="w01">土日祝日休み</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="w02">
+                                    <label for="w02">夏季・冬季休暇
+                                        あり</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="w03">
+                                    <label for="w03">退職金制度あり</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="w04">
+                                    <label for="w04">社会保険完備</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group c-checkbox">
+                                    <input type="checkbox" id="w05">
+                                    <label for="w05">産休・育休制度</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <div class="block-center">
+                    <a href="#" class="btn btn-active">
+                        <span>この条件で絞り込む</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7.914" height="13.414" viewBox="0 0 7.914 13.414">
+                            <g id="Group_315" data-name="Group 315" transform="translate(-625.793 -286.793)">
+                              <line id="Line_46" data-name="Line 46" x2="6.5" y2="6.5" transform="translate(626.5 287.5)" fill="none" stroke="#fff" stroke-width="2"/>
+                              <line id="Line_47" data-name="Line 47" x2="6.5" y2="6.5" transform="translate(633 293) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="line-solid"></div>
+        </div>
+        
+        <div class="b-search-by">
+            <div class="container">
+                <h3 class="search-title">フリーワードで探す</h3>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" placeholder="入力例：未経験、フレックス制など">
+                        <button type="submit">検索</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="b-result">
+            <div class="container">
+                <h5 class="result-title">
+                    <b>4</b>件の求人がヒットしました。
+                </h5>
+                <div class="result-list">
+                    <div class="result-box">
+                        <div class="box-title">
+                            <h5>自社オリジナルブランド！レディースデザイナー</h5>
+                            <div class="number">求人案件番号：2932</div>
+                        </div>
+                        <div class="box-content">
+                            <p>
+                                勤務地    ：四ツ橋(21年より四条畷の新社屋)<br>
+                                職種　　  ：デザイナー<br>
+                                仕事内容   :オリジナルブランドのデザイナー。組織構成　MD1名　デザイナー4名企画チームは、MDを中心とした5人体制です。シーズンごとに年間約10回、毎回25～30型を4名のデザイナーで割り振ってデザインしています。
+                            </p>
+                            <div class="group-btn">
+                                <a href="#" class="btn btn-border">
+                                    詳細を見る
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.914" height="13.414" viewBox="0 0 7.914 13.414">
+                                        <g id="Group_315" data-name="Group 315" transform="translate(-625.793 -286.793)">
+                                          <line id="Line_46" data-name="Line 46" x2="6.5" y2="6.5" transform="translate(626.5 287.5)" fill="none" stroke="#94913a" stroke-width="2"/>
+                                          <line id="Line_47" data-name="Line 47" x2="6.5" y2="6.5" transform="translate(633 293) rotate(90)" fill="none" stroke="#94913a" stroke-width="2"/>
+                                        </g>
+                                    </svg>                                      
+                                </a>
+                                <a href="#" class="btn btn-active">
+                                    この求人に応募する
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.914" height="13.414" viewBox="0 0 7.914 13.414">
+                                        <g id="Group_315" data-name="Group 315" transform="translate(-625.793 -286.793)">
+                                          <line id="Line_46" data-name="Line 46" x2="6.5" y2="6.5" transform="translate(626.5 287.5)" fill="none" stroke="#fff" stroke-width="2"/>
+                                          <line id="Line_47" data-name="Line 47" x2="6.5" y2="6.5" transform="translate(633 293) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+                                        </g>
+                                    </svg>                                      
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-box">
+                        <div class="box-title">
+                            <h5>自社オリジナルブランド！レディースデザイナー</h5>
+                            <div class="number">求人案件番号：2932</div>
+                        </div>
+                        <div class="box-content">
+                            <p>
+                                勤務地    ：四ツ橋(21年より四条畷の新社屋)<br>
+                                職種　　  ：デザイナー<br>
+                                仕事内容   :オリジナルブランドのデザイナー。組織構成　MD1名　デザイナー4名企画チームは、MDを中心とした5人体制です。シーズンごとに年間約10回、毎回25～30型を4名のデザイナーで割り振ってデザインしています。
+                            </p>
+                            <div class="group-btn">
+                                <a href="#" class="btn btn-border">
+                                    詳細を見る
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.914" height="13.414" viewBox="0 0 7.914 13.414">
+                                        <g id="Group_315" data-name="Group 315" transform="translate(-625.793 -286.793)">
+                                          <line id="Line_46" data-name="Line 46" x2="6.5" y2="6.5" transform="translate(626.5 287.5)" fill="none" stroke="#94913a" stroke-width="2"/>
+                                          <line id="Line_47" data-name="Line 47" x2="6.5" y2="6.5" transform="translate(633 293) rotate(90)" fill="none" stroke="#94913a" stroke-width="2"/>
+                                        </g>
+                                    </svg>                                      
+                                </a>
+                                <a href="#" class="btn btn-active">
+                                    この求人に応募する
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.914" height="13.414" viewBox="0 0 7.914 13.414">
+                                        <g id="Group_315" data-name="Group 315" transform="translate(-625.793 -286.793)">
+                                          <line id="Line_46" data-name="Line 46" x2="6.5" y2="6.5" transform="translate(626.5 287.5)" fill="none" stroke="#fff" stroke-width="2"/>
+                                          <line id="Line_47" data-name="Line 47" x2="6.5" y2="6.5" transform="translate(633 293) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+                                        </g>
+                                    </svg>                                      
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-box">
+                        <div class="box-title">
+                            <h5>自社オリジナルブランド！レディースデザイナー</h5>
+                            <div class="number">求人案件番号：2932</div>
+                        </div>
+                        <div class="box-content">
+                            <p>
+                                勤務地    ：四ツ橋(21年より四条畷の新社屋)<br>
+                                職種　　  ：デザイナー<br>
+                                仕事内容   :オリジナルブランドのデザイナー。組織構成　MD1名　デザイナー4名企画チームは、MDを中心とした5人体制です。シーズンごとに年間約10回、毎回25～30型を4名のデザイナーで割り振ってデザインしています。
+                            </p>
+                            <div class="group-btn">
+                                <a href="#" class="btn btn-border">
+                                    詳細を見る
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.914" height="13.414" viewBox="0 0 7.914 13.414">
+                                        <g id="Group_315" data-name="Group 315" transform="translate(-625.793 -286.793)">
+                                          <line id="Line_46" data-name="Line 46" x2="6.5" y2="6.5" transform="translate(626.5 287.5)" fill="none" stroke="#94913a" stroke-width="2"/>
+                                          <line id="Line_47" data-name="Line 47" x2="6.5" y2="6.5" transform="translate(633 293) rotate(90)" fill="none" stroke="#94913a" stroke-width="2"/>
+                                        </g>
+                                    </svg>                                      
+                                </a>
+                                <a href="#" class="btn btn-active">
+                                    この求人に応募する
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.914" height="13.414" viewBox="0 0 7.914 13.414">
+                                        <g id="Group_315" data-name="Group 315" transform="translate(-625.793 -286.793)">
+                                          <line id="Line_46" data-name="Line 46" x2="6.5" y2="6.5" transform="translate(626.5 287.5)" fill="none" stroke="#fff" stroke-width="2"/>
+                                          <line id="Line_47" data-name="Line 47" x2="6.5" y2="6.5" transform="translate(633 293) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+                                        </g>
+                                    </svg>                                      
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-box">
+                        <div class="box-title">
+                            <h5>自社オリジナルブランド！レディースデザイナー</h5>
+                            <div class="number">求人案件番号：2932</div>
+                        </div>
+                        <div class="box-content">
+                            <p>
+                                勤務地    ：四ツ橋(21年より四条畷の新社屋)<br>
+                                職種　　  ：デザイナー<br>
+                                仕事内容   :オリジナルブランドのデザイナー。組織構成　MD1名　デザイナー4名企画チームは、MDを中心とした5人体制です。シーズンごとに年間約10回、毎回25～30型を4名のデザイナーで割り振ってデザインしています。
+                            </p>
+                            <div class="group-btn">
+                                <a href="#" class="btn btn-border">
+                                    詳細を見る
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.914" height="13.414" viewBox="0 0 7.914 13.414">
+                                        <g id="Group_315" data-name="Group 315" transform="translate(-625.793 -286.793)">
+                                          <line id="Line_46" data-name="Line 46" x2="6.5" y2="6.5" transform="translate(626.5 287.5)" fill="none" stroke="#94913a" stroke-width="2"/>
+                                          <line id="Line_47" data-name="Line 47" x2="6.5" y2="6.5" transform="translate(633 293) rotate(90)" fill="none" stroke="#94913a" stroke-width="2"/>
+                                        </g>
+                                    </svg>                                      
+                                </a>
+                                <a href="#" class="btn btn-active">
+                                    この求人に応募する
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.914" height="13.414" viewBox="0 0 7.914 13.414">
+                                        <g id="Group_315" data-name="Group 315" transform="translate(-625.793 -286.793)">
+                                          <line id="Line_46" data-name="Line 46" x2="6.5" y2="6.5" transform="translate(626.5 287.5)" fill="none" stroke="#fff" stroke-width="2"/>
+                                          <line id="Line_47" data-name="Line 47" x2="6.5" y2="6.5" transform="translate(633 293) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+                                        </g>
+                                    </svg>                                      
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+        
+    </div>
+    <!-- end main content -->
+
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="block-contact">
+            <div class="container">
+                <div class="content">
+                    <h3 class="title">CONTACT</h3>
+                    <p class="desc">お問い合わせ</p>
+                    <div class="group-btn">
+                        <a href="./contact.html">
+                            <span>お問い合わせはこちら</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7.207" height="12.707" viewBox="0 0 7.207 12.707">
+                                <g id="Group_268" data-name="Group 268" transform="translate(0.354 0.354)">
+                                  <line id="Line_46" data-name="Line 46" x2="6.5" y2="6.5" fill="none" stroke="#94913a" stroke-width="1"/>
+                                  <line id="Line_47" data-name="Line 47" x2="6.5" y2="6.5" transform="translate(6.5 5.5) rotate(90)" fill="none" stroke="#94913a" stroke-width="1"/>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="./faq.html">
+                            <span>よくある質問はこちら</span>
+                            <span>よくある質問</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7.207" height="12.707" viewBox="0 0 7.207 12.707">
+                                <g id="Group_268" data-name="Group 268" transform="translate(0.354 0.354)">
+                                  <line id="Line_46" data-name="Line 46" x2="6.5" y2="6.5" fill="none" stroke="#94913a" stroke-width="1"/>
+                                  <line id="Line_47" data-name="Line 47" x2="6.5" y2="6.5" transform="translate(6.5 5.5) rotate(90)" fill="none" stroke="#94913a" stroke-width="1"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-auto">
+                        <a href="./top.html" class="logo-footer">
+                            <img src="./images/logo-footer.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div class="block-right">
+                            <ul class="link-list">
+                                <li><a href="#">運営会社情報</a></li>
+                                <li><a href="#">個人情報取扱について</a></li>
+                                <li><a href="#">お問い合わせ</a></li>
+                            </ul>
+                            <p class="copyright">Copyright © 2013 CARRIAGE INC. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

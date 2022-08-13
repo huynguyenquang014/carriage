@@ -1,0 +1,333 @@
+#p-search{
+    .container{
+        max-width: 940px;
+    }
+    .page-title{
+        margin-top: 84px;
+        margin-bottom: 90px;
+        @include br747{
+            margin-top: 50px;
+            margin-bottom: 55px;           
+        }
+        .c-title{
+            h3{
+                font-size: 50px;
+                line-height: 42px;
+                letter-spacing: 7.5px;
+                margin-bottom: 15px;
+                @include br747{
+                    font-size: 32px;
+                    margin-bottom: 0;
+                    letter-spacing: 3px;
+                }
+            }
+            p{
+                font-size: 18px;
+                letter-spacing: 2px;
+                @include br747{
+                    font-size: 14px;
+                    letter-spacing: 1px;   
+                }
+            }
+        }
+    }
+    .b-filter-by{
+        .filter-title{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 42px;
+            letter-spacing: 3px;
+            margin-bottom: 35px;
+            @include br747{
+                font-size: 18px;
+                line-height: 30px;       
+            }
+        }
+        section{
+            .label{
+                font-size: 20px;
+                font-weight: 700;
+                color: $main-color;
+                letter-spacing: 1.8px;
+                padding-left: 15px;
+                margin-bottom: 26px;
+                @include br747{
+                    font-size: 16px;
+                    padding-left: 0; 
+                    margin-bottom: 15px;
+                }
+            }
+            .filter-list{
+                width: 800px;
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -5.5px;
+                margin-right: -5.5px;
+                li{
+                    padding-left: 5.5px;
+                    padding-right: 5.5px;
+                    flex: 0 0 25%;
+                    max-width: 25%;
+                    margin-bottom: 15px;
+                    @include br747{
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    .form-group{
+                        // background-color: #F5F5F5;
+                        margin-bottom: 0;
+                        // max-height: 61px;
+                        // padding: 0 15px 0 21px;
+                        // height: 61px;
+                        // display: flex;
+                        // align-items: center;
+                    }
+                    .c-checkbox input:checked + label:after{
+                        left: 24px;
+                    }
+                    label{
+                        background-color: #F5F5F5;
+                        margin-bottom: 0;
+                        max-height: 61px;
+                        padding: 0 15px 0 21px;
+                        height: 61px;
+                        display: flex;
+                        align-items: center;
+                        &.text-small{
+                            font-size: 13px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        section.area{
+            ul{
+                margin-left: -4.5px;
+                margin-right: -4.5px;
+                li{
+                    padding-left: 4.5px;
+                    padding-right: 4.5px;
+                    flex: 0 0 20%;
+                    max-width: 20%;
+                    margin-bottom: 15px;
+                    @include br747{
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    .form-group{
+                        
+                    }
+                    .c-checkbox input:checked + label:after{
+                        left: 22px;
+                    }
+                    .c-checkbox label:before{
+                        padding: 7.5px;
+                    }
+                    label{
+                        height: 49px;
+                        max-height: 49px;
+                        padding: 0 10px 0 17px;
+                        font-size: 15px;
+                        @include br747{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .block-center{
+            margin-top: 32px;
+            a{
+                font-size: 18px;
+                width: 300px;
+                height: 57px;
+                margin: auto;
+                background-color: $main-color;
+                letter-spacing: 2.8px;
+                @include br747{
+                    font-size: 14px;
+                    letter-spacing: 2px;   
+                }
+                svg{
+                    right: 13px;
+                }
+            }
+        }
+    }
+
+    .line-dashed{
+        border: 1px dashed #DEDEDE;
+        margin: 14px 0 29px;
+    }
+    .line-solid{
+        width: 100%;
+        height: 3px;
+        background-color: #F5F5F5;
+        margin: 44px 0 54px;
+    }
+
+    .b-search-by{
+        text-align: center;
+        .search-title{
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 42px;
+            letter-spacing: 3px;
+            color: #1E1F21;
+            margin-bottom: 28px;
+            @include br747{
+                font-size: 18px;
+                line-height: 30px;       
+            }
+        }
+        form{
+            .form-group{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            input{
+                width: 376px;
+            }
+            button{
+                border: none;
+                background-color: $main-color;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 1.8px;
+                height: 44px;
+                margin-left: 20px;
+                padding: 0 15px;
+                width: 117px;
+                @include br747{
+                    font-size: 14px;   
+                }
+            }
+        }
+    }
+
+    .b-result{
+        margin-top: 101px;
+        margin-bottom: 130px;
+        @include br747{
+            margin-top: 70px;
+            margin-bottom: 80px;           
+        }
+        .result-title{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 37px;
+            letter-spacing: 2px;
+            text-align: center;
+            @include br747{
+                font-size: 18px;
+                line-height: 30px;       
+            }
+            b{
+                color: $main-color;
+                font-size: 50px;
+                font-weight: 700;
+                margin-right: 4px;
+                @include br747{
+                    font-size: 32px;   
+                }
+            }
+        }
+        .result-list{
+            margin-top: 43px;
+            .result-box{
+                background-color: #F4F4EB;
+                padding: 5px;
+                margin-bottom: 40px;
+                .box-title{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 10px 16px 26px;
+                    @include br747{
+                        display: block;
+                    }
+                    h5{
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 37px;
+                        letter-spacing: 2px;
+                        margin-bottom: 0;
+                        @include br747{
+                            font-size: 18px;
+                            line-height: 30px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                    .number{
+                        display: inline-block;
+                        font-family: "Yu Gothic";
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 1.3px;
+                        background-color: #fff;
+                        border-radius: 4px;
+                        padding: 7px 14px;
+                    }
+                }
+                .box-content{
+                    background-color: #fff;
+                    padding: 26px 37px 39px;
+                    @include br747{
+                        padding: 20px;
+                    }
+                    p{
+                        line-height: 30px;
+                        letter-spacing: 2px;
+                        width: 737px;
+                        max-width: 100%;
+                        margin-bottom: 27px;
+                    }
+                }
+            }
+            .group-btn{
+                width: 620px;
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: space-between;
+                @include br747{
+                    display: block;       
+                }
+                a{
+                    font-size: 18px;
+                    height: 57px;
+                    font-weight: 500;
+                    width: calc(100% - 20px);
+                    @include br747{
+                        width: 100%;
+                        font-size: 14px;
+                    }
+                    svg{
+                        right: 11px;
+                    }
+                    &.btn-active{
+                        margin-left: 20px;
+                        background-color: $main-color;
+                        border-color: $main-color;
+                        @include br747{
+                            margin-left: 0;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

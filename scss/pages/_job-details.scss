@@ -1,0 +1,122 @@
+#job-details {
+    .b-for-job {
+        margin-top: 86px;
+        @include br747{
+            margin-top: 50px;
+        }
+        .content-b-job {
+            width: 698px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p {
+            line-height: 30px;
+        }
+        .content-text-job {
+         padding-top: 12px !important;
+        }
+        .title-original-brand {
+            margin-bottom: 30px;
+            font-size: 28px;
+            letter-spacing: 2.8px;
+            font-weight: bold;
+            @include br747 {
+                font-size: 20px !important;
+            }
+        }
+        .leter-spc-top {
+            letter-spacing: 2.4px;
+            margin-bottom: 0px;
+        }
+        .font-size-15 {
+            letter-spacing: 3px;
+            margin-bottom: 0px;
+        }
+        .button-link {
+            border: none;
+            width: 173px;
+            height: 31px;
+            border-radius: 4px;
+            letter-spacing: 1.5px;
+            font-size: 14px;
+            color: #1e1f21;
+        }
+        .title-original-brand {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .content-btn-job {
+            margin-bottom: 12px;
+        }
+        .leter-spc {
+            letter-spacing: 2.3px;
+            margin-bottom: 0;
+            line-height: 30px;
+        }
+    
+        .group-btn{
+            width: 637px;
+            max-width: 100%;
+            margin-top: 57px;
+            margin-left: auto;
+            margin-right: auto;  
+            padding-bottom: 34px;
+            margin-bottom: 96px;
+            display: flex;
+            justify-content: space-between;
+            @include br747{
+                display: block;
+                margin-top: 20px;   
+                margin-bottom: 50px;
+            }
+            a{
+                font-size: 18px;
+                height: 57px;
+                font-weight: 500;
+                width: calc(100% - 37px);
+                @include br747{
+                    width: 100%;   
+                }
+                svg{
+                    right: 11px;
+                }
+                &.btn-active{
+                    margin-right: 37px;
+                    background-color: $main-color;
+                    border-color: $main-color;
+                    @include br747{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .btn-left-job {
+            background: #94913a;
+            color: white;
+            font-size: 18px;
+            display: block;
+            text-align: center;
+            letter-spacing: 3.4px;
+            line-height: 57px;
+        }
+        .btn-left-job1 {
+            background: #ffffff;
+            color: #94913a;
+            border: 1px solid #c4c4c4;
+            font-size: 18px;
+            display: block;
+            text-align: center;
+            letter-spacing: 3.4px;
+            line-height: 57px;
+        }
+        .p-d-lr {
+            padding: 0px 72px 0px 83px;
+            letter-spacing: 2.7px;
+        }
+        .p-lr0 {
+            padding: 0px 29px 0px 43.1px;
+            letter-spacing: 2.5px;
+        }
+    }
+}

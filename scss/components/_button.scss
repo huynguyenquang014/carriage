@@ -1,0 +1,70 @@
+.btn{
+    height: 53px;
+    font-size: 14px;
+    padding: 5px 15px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    svg{
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &.btn-active{
+        background-color: #AAA769;
+        border-color: $main-color;
+        color: #fff;
+        &:hover{
+            background-color: $main-color;
+            color: #fff;
+            border-color: $main-color;
+            line, path{
+                stroke: #fff;
+            }
+        }
+    }
+    &.btn-grey{
+        background-color: #F2F2F2;
+        color: $main-color;
+        border-color: #f2f2f2;
+        &:hover{
+            background-color: $main-color;
+            color: #fff;
+            border-color: $main-color;
+            line, path{
+                stroke: #fff;
+            }
+        }
+    }
+    &.btn-border{
+        color: $main-color;
+        border-color: $main-color;
+        &:hover{
+            background-color: $main-color;
+            color: #fff;
+            border-color: $main-color;
+            line, path{
+                stroke: #fff;
+            }
+        }
+    }
+    &.btn-black{
+        background-color: #1E1F21;
+        color: #fff;
+        border-color: #1E1F21;
+        &:hover{
+            background-color: $main-color;
+            color: #fff;
+            border-color: $main-color;
+            line, path{
+                stroke: #fff;
+            }
+        }
+    }
+}

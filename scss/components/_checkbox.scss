@@ -1,0 +1,59 @@
+.c-checkbox {
+	display: block;
+	margin-bottom: 15px;
+	input {
+		padding: 0;
+		height: initial;
+		width: initial;
+		margin-bottom: 0;
+		display: none;
+		cursor: pointer;
+		&:checked {
+			+ {
+				label {
+					&:after {
+						content: '';
+						display: block;
+						position: absolute;
+						top: calc(50% - 3px);
+						left: 3px;
+						width: 6px;
+						height: 14px;
+						border: solid #C4C4C4;
+						border-width: 0 2px 2px 0;
+						transform: rotate(45deg) translateY(-50%);
+					}
+				}
+			}
+		}
+	}
+	label {
+        display: flex;
+        align-items: center;
+		position: relative;
+		cursor: pointer;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        margin-bottom: 0;
+		@include br747{
+			font-size: 14px;
+		}
+		&:before {
+			content: '';
+			-webkit-appearance: none;
+			background-color: transparent;
+			border: 1px solid #C4C4C4;
+			padding: 10px;
+			display: inline-block;
+			position: relative;
+			vertical-align: middle;
+			cursor: pointer;
+			margin-right: 9px;
+            border-radius: 4px;
+            background-color: #fff;
+			@include br747{
+				padding: 7px;
+			}
+		}
+	}
+}

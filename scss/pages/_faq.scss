@@ -1,0 +1,298 @@
+#p-faq{
+    #header .header-desktop {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        .nav-menu ul li a{
+            color: #fff;
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+    .b-big-mv{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.16);
+            z-index: 1;
+        }
+        img{
+            width: 100%;
+            // height: 100vh;
+            object-fit: cover;
+            @include br747{
+                height: 194px;
+            }
+        }
+        .content{
+            color: #fff;
+            position: absolute;
+            left: 123px;
+            top: calc(50% + 28px);
+            transform: translateY(-50%);
+            z-index: 2;
+            @include br747{
+                left: 31px;
+                top: 50%;
+            }
+            .title{
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 42px;
+                font-family: "Roboto";
+                letter-spacing: 8px;
+                margin-bottom: 16px;
+                @include br971{
+                    font-size: 40px;
+                    line-height: 56px;
+                    letter-spacing: 1px;
+                }
+                @include br747{
+                    font-size: 25px;
+                    line-height: 25px;
+                    margin-bottom: 8px;
+                    letter-spacing: 3.8px;
+                }
+            }
+            .desc{
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 1.8px;
+                position: relative;
+                display: inline-block;
+                margin-bottom: 7px;
+                padding-left: 50px;
+                @include br747{
+                    font-size: 12px;
+                    letter-spacing: 0.8px;
+                    margin-bottom: 5px;
+                    margin-left: 3px;
+                    padding-left: 34px
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 40px;
+                    height: 1px;
+                    background-color: #fff;
+                    @include br747{
+                        width: 26px;
+                    }
+                }
+            }
+        }
+    }
+    .text{
+        width: 697px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        line-height: 36px;
+        margin-top: 113px;
+        @include br747{
+            margin-top: 50px;
+            line-height: 26px;
+        }
+    }
+    .b-service{
+        margin-top: 136px;
+        margin-bottom: 109px;
+        @include br747{
+            margin-top: 70px;
+            margin-bottom: 70px;                   
+        }
+        .container{
+            max-width: 1087px;
+        }
+        .row > div{
+            &:nth-child(1){
+                .service-box{
+                    &::before{
+                        content: "";
+                        height: 98px;
+                        width: 1px;
+                        background-color: $main-color;
+                        position: absolute;
+                        left: -10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        @include br747{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .service-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            @include br747{
+                justify-content: flex-start;
+                margin-bottom: 20px;            
+            }
+            &::after{
+                content: "";
+                height: 98px;
+                width: 1px;
+                background-color: $main-color;
+                position: absolute;
+                right: -10px;
+                top: 50%;
+                transform: translateY(-50%);
+                @include br747{
+                    display: none;           
+                }
+            }
+            .icon{
+                width: 51px;
+                height: 51px;
+                margin-right: 8px;
+                @include br747{
+                    width: 31px;
+                    height: 31px;           
+                }
+                img{
+                    @include br747{
+                        width: 30px;       
+                    }
+                }
+            }
+            h5{
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 37px;
+                color: $main-color;
+                margin-bottom: 0;
+                letter-spacing: 3px;
+                @include br747{
+                    font-size: 15px;
+                    line-height: 28px;           
+                }
+            }
+            .icon-down{
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                @include br747{
+                    position: static;
+                    transform: none;
+                    margin-left: 10px;       
+                }
+            }
+        }
+    }
+    .b-accordion{
+        margin-bottom: 104px;
+        @include br747{
+            margin-bottom: 70px;
+        }
+        &.for-client{
+            margin-bottom: 111px;
+            @include br747{
+                margin-bottom: 70px;
+            }
+        }
+        &.other{
+            margin-bottom: 151px;
+            @include br747{
+                margin-bottom: 70px;
+            }
+        }
+        .c-title{
+            margin-bottom: 30px;
+            h3{
+                margin-bottom: -8px;
+            }
+        }
+        .accordion{
+            width: 900px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card{
+            border: none;
+            margin-bottom: 20px;
+            border-radius: 0%;
+            .card-header{
+                padding: 0;
+                border: none;
+                margin-bottom: 0;
+                h5{
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 42px;
+                    letter-spacing: 2.8px;
+                    background-color: #AAA769;
+                    border-color: #AAA769;
+                    border-radius: 0;
+                    padding: 12px 55px 12px 23px;
+                    color: #fff;
+                    transition: .4s all;
+                    position: relative;
+                    @include br747{
+                        font-size: 14px;
+                        line-height: 28px;
+                    }
+                    &::after{
+                        content: "";
+                            position: absolute;
+                            right: 29px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 15px;
+                            height: 15px;
+                            display: block;
+                            background: url("../images/faq/icon-minus.svg") no-repeat center;
+                    }
+                    &.collapsed{
+                        letter-spacing: 2.5px;
+                        padding: 16px 23px;
+                        border: 1px solid #c4c4c4;
+                        background-color: #fff;
+                        color: #1E1F21;
+                        &::after{
+                            background: url("../images/faq/icon-plus.svg") no-repeat center;
+                        }
+                        b{
+                            color: $main-color;
+                        }
+                    }
+                    b{
+                        color: #fff;
+                        margin-right: 1px;
+                    }
+                }
+            }
+            .card-body{
+                padding: 15px 10px 0px 0;
+                margin-bottom: -4px;
+                p{
+                    line-height: 30px;
+                    letter-spacing: 2.25px;
+                    margin-bottom: 0;
+                    @include br747{
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
