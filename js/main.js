@@ -7,7 +7,7 @@ $(document).ready(function(){
             arrows: false,
             dots: false,
             loop: false,
-            // autoplay: true,
+            autoplay: true,
             speed: 1000,
             autoplaySpeed: 3000,
             responsive: [
