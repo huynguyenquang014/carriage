@@ -1,0 +1,474 @@
+#p-entry {
+  .registration-form-content {
+    .container-registration-sub {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      margin-top: 85px;
+    }
+    .title-registration {
+      text-align: center;
+    }
+    .title-top-entry {
+      font-size: 50px;
+      font-weight: bold;
+      letter-spacing: 6px;
+      @include br747 {
+        font-size: 32px !important;
+      }
+    }
+    .title-sub-top-entry {
+      font-size: 18px;
+      color: #94913a;
+      font-weight: bold;
+      line-height: 42px;
+    }
+    .sub-text-entry {
+      margin-bottom: 0px;
+      letter-spacing: 1.7px;
+    }
+    .group-regisration-item {
+      display: flex;
+      width: 100%;
+      // justify-content: co;
+      align-content: center;
+      justify-content: center;
+      .group-regisration-item {
+        p {
+          line-height: 54px !important;
+        }
+      }
+    }
+    .Lheight-54.kai-sa {
+      padding-right: 38px;
+    }
+    .w-702px {
+      width: 702px;
+      max-width: 100%;
+      margin-top: 42px;
+      @include br747 {
+        width: auto;
+        max-width: 100%;
+      }
+    }
+    .w-70 {
+      width: 70%;
+      @include br747{
+        width: 100%;
+      }
+    }
+    // .sub-text-entry-sub {
+    //   letter-spacing: 1.7px !important;
+    // }
+    .w-30 {
+      width: 32%;
+      text-align: center;
+      @include br747{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .Joining-time-sub {
+        margin-right: 43px;
+        line-height: 35px;
+      }
+    }
+    .Joining-time-sub1 {
+      margin-right: 41px;
+      line-height: 25px;
+      letter-spacing: 1.5px;
+    }
+    .form-send {
+      padding: 0px 10px;
+      margin-top: 46px;
+    }
+    .drc-company {
+      display: flex;
+      align-items: flex-start;
+      @include br747{
+        display: block;
+      }
+    }
+    .drc-company1 {
+      display: flex;
+      align-items: center;
+      @include br747{
+        display: block;
+      }
+    }
+    hr {
+      margin-bottom: 10px;
+    }
+    .Required-item {
+      width: 37px;
+      height: 9px;
+      background: #d85757;
+      color: #fff;
+      font-size: 13p;
+      font-size: 13px;
+      padding: 1.3px 5.7px;
+    }
+    p.Lheight-54 {
+      line-height: 54px;
+      margin-bottom: 0px;
+      margin-right: 24px;
+      letter-spacing: 2px;
+      max-width: 100%;
+      width: 100%;
+    }
+    .width-425 {
+      width: 425px;
+      height: 45px;
+      border-radius: 4px;
+      border: 1px solid #d0d0d0;
+    }
+    .Joining-time,
+    .Retirement-time,
+    .d-f,
+    .Employment-status {
+      display: flex;
+      @include br747{
+        display: block;
+      }
+    }
+    .Employment-status {
+      margin-top: 10px;
+    }
+    .groub-select {
+      width: 70%;
+      display: flex;
+      max-width: 100%;
+      @include br747{
+        width: 100%;
+      }
+    }
+    .width-50 {
+      width: 50%;
+    }
+    .w-40 {
+      width: 35%;
+      margin-right: 18px;
+    }
+    .inter-w {
+      width: 84.1%;
+      margin-left: 5px;
+      height: 33px;
+      border: 1px solid #d0d0d0;
+      border-radius: 4px;
+      appearance: none;
+      background: url("../images/icon-down.png") no-repeat calc(100% - 10px) center;
+    }
+    select.subinter-w {
+      width: 30%;
+      height: 33px;
+      border: 1px solid #d0d0d0;
+      border-radius: 4px; 
+      appearance: none;
+      background: url("../images/icon-down.png") no-repeat calc(100% - 10px) center;
+    }
+    .Joining-time {
+      margin-top: 30px;
+    }
+    .groub-checkb {
+      width: 70%;
+      @include br747{
+        width: 100%;
+      }
+    }
+    .company-name {
+      font-size: 15px;
+      margin-right: 5px;
+      letter-spacing: 1.5px;
+    }
+    .groub-checkb-item {
+    }
+    .groub-checkb-item span {
+      font-size: 13px;
+    }
+    .groub-checkb-item input {
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+      vertical-align: middle;
+      border: 1px solid #707070;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-appearance: none;
+      outline: none;
+      cursor: pointer;
+    }
+    //   span.Subcontracting {
+    //     letter-spacing: 2px;
+    // }
+    .groub-checkb-item input:checked {
+      background-color: blue;
+    }
+    .width-auto {
+      width: auto;
+    }
+    .group-select-file-item {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      @include br747{
+        width: 100%;
+      }
+    }
+    .width-70 {
+      width: 70%;
+    }
+    .comapany-name-item {
+      width: 88%;
+      max-width: 100%;
+      border: 1px solid #d0d0d0;
+      border-radius: 4px;
+      height: 45px;
+      margin-left: 6px;
+      margin-top: 3px;
+      @include br747{
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    .d-f a {
+      display: flex;
+      width: 186px;
+      height: 28px;
+      background: #ebebeb;
+      border-radius: 4px;
+      display: block;
+      text-align: center;
+      line-height: 28px;
+      color: #1e1f21;
+      font-size: 13px;
+      margin-right: 13px;
+      margin-bottom: 18px;
+    }
+    .group-btn-regis {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 54px;
+      .w-300 {
+        width: 300px;
+        background: #1e1f21;
+        display: block;
+        height: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #fff;
+        margin-left: 7px;
+      }
+    }
+    .Lheight-54.kai-sa {
+      margin-right: 41px !important;
+    }
+
+    .email-item-title {
+      line-height: 54px;
+    }
+    span.Required-item.css-item-mail {
+      margin-left: 19px;
+    }
+    .css-item-mail {
+      margin-left: 8.7px !important;
+    }
+    .m-mail-l {
+      margin-left: 20px !important;
+      letter-spacing: 1.2px !important;
+    }
+    .width-css {
+      margin-top: 5px;
+    }
+    input.width-425.input-company {
+      margin-top: 5px;
+    }
+    .barie-item {
+      width: 100%;
+      height: 1px;
+      background: #ccc;
+    }
+    .drc-company.content-groub-company {
+      margin-top: 19px;
+      padding: 0px 10px;
+    }
+    .w-100.text-aling-l {
+      text-align: left;
+      margin-left: 27px;
+      letter-spacing: 2px;
+      margin-top: 3px;
+      @include br747{
+        margin-left: 0;
+      }
+    }
+    .group-select-file-item a {
+      letter-spacing: 1.4px;
+      padding-left: 3px;
+      padding-top: 1px;
+      margin-left: 2px;
+    }
+    .group-select-file-item span {
+      letter-spacing: 0.5px;
+    }
+    .drc-company.resume-item {
+      margin-top: 20px;
+      margin-bottom: 0px;
+      padding: 0px 10px;
+    }
+    .w-100.resume-item-detail {
+      text-align: left;
+      margin-left: 27px;
+      letter-spacing: 2px;
+      line-height: 31px;
+      @include br747{
+        margin-left: 0;
+      }
+    }
+    .group-btn-regis {
+      margin-top: 54px;
+      margin-bottom: 135px;
+    }
+    .confirmation-screen {
+      padding: 0px 54px 0px 67px;
+      letter-spacing: 3px;
+    }
+    .drc-company.phone-number {
+      margin-top: 16px;
+    }
+    .groub-checkb-item span {
+      margin-right: -5px;
+    }
+    .groub-checkb-item {
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      margin-left: 5.2px;
+      letter-spacing: 0.3px;
+      @include br747{
+        margin-left: 0;
+      }
+    }
+    .leight-H-company {
+      margin-right: 5px;
+      letter-spacing: 2px;
+    }
+    .Lheight-54.m-r-20 {
+      margin-right: 4px !important;
+      margin-top: 8px !important;
+    }
+    .barie-item.m-t-2 {
+      margin-top: 10px;
+    }
+    .barie-item.m-t-2-mail {
+      margin-top: 12px !important;
+      margin-bottom: 10px !important;
+    }
+    span.m-l-number {
+      padding-left: 7px;
+    }
+    .email-item-title {
+      margin-bottom: 0px;
+      margin-top: 4px;
+    }
+    .barie-item.css-custom-bre {
+      margin-top: 11px;
+      padding-bottom: 1px;
+    }
+    span.fax-impotent {
+      margin-top: 5px;
+    }
+    .barie-item.sub-css1 {
+      margin-top: 4px;
+    }
+    .barie-item.sub-css {
+      margin-top: 2px;
+    }
+    .yen {
+      position: relative;
+      top: 7px;
+      right: 2px;
+    } 
+    .nen {
+      position: relative;
+      top: 7px;
+  }
+  }
+}
+
+
+.file-placeholder {
+  position:relative;
+  cursor: pointer;
+  width: 400px;
+  max-width: 100%;
+  height: 28px;
+  margin-bottom: 18px;
+  /*
+  you can use the label to trigger the event    */
+  label {
+     display:block;
+     position: absolute;
+     z-index: 2;
+     top: 0;
+     left: 0;
+     width: 100%;
+     max-width: 400px;
+     height: 28px;
+     &:before {
+        content:'File';
+        position:absolute;
+        top:-15px;
+        left:10px;
+        background-color: darken(#ededed, 15%);
+        padding:2px 5px;
+        color:#FFF;
+     }
+  }
+  /*
+  or the input file. here I use both but you don't have to   */
+  
+  input[type=file] {
+     position: absolute;
+     z-index: 3;
+     top: 0;
+     left: 0;
+     width: 100%;
+     max-width: 400px;
+     height: 28px;
+     opacity: 0;
+  }
+    .file-browse {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 28px;
+       
+       .file-browse-txt {
+          display:block;
+          line-height:28px;
+          padding-left:10px;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+
+       }
+      .browse {
+        background-color: #EBEBEB;
+        border-radius: 4px;
+        color: #1E1F21;
+        height: 28px;
+        line-height: 1;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        min-width: 186px; 
+     }
+       
+  }
+  
+}

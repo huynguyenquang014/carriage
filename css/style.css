@@ -3284,6 +3284,33 @@ ul li {
   list-style: none;
 }
 
+textarea, select {
+  border: 1px solid #C4C4C4;
+  padding: 5px 17px;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  color: #B4AFAF;
+}
+textarea:focus, textarea:focus-visible, select:focus, select:focus-visible {
+  border-color: #94913A;
+  outline: none;
+}
+textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+  color: inherit;
+}
+textarea::-moz-placeholder, select::-moz-placeholder {
+  color: inherit;
+}
+textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  color: inherit;
+}
+textarea::-ms-input-placeholder, select::-ms-input-placeholder {
+  color: inherit;
+}
+textarea::placeholder, select::placeholder {
+  color: inherit;
+}
+
 input {
   width: 100%;
   height: 44px;
@@ -10140,4 +10167,748 @@ input::placeholder {
   #p-case-study-details .b-case-details .related-case .wrap .content .box .content-box p span {
     display: block;
   }
+}
+
+#p-contact .page-title {
+  margin-top: 84px;
+  margin-bottom: 47px;
+}
+@media (max-width: 767px) {
+  #p-contact .page-title {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}
+#p-contact .page-title .c-title h3 {
+  font-size: 50px;
+  line-height: 42px;
+  letter-spacing: 7.5px;
+  margin-bottom: 9px;
+}
+@media (max-width: 767px) {
+  #p-contact .page-title .c-title h3 {
+    font-size: 32px;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+  }
+}
+#p-contact .page-title .c-title p {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+@media (max-width: 767px) {
+  #p-contact .page-title .c-title p {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+#p-contact .contact-form-content .container {
+  width: 738px;
+  max-width: 100%;
+}
+#p-contact .contact-form-content p {
+  line-height: 42px;
+}
+#p-contact .contact-form-content .title-contact {
+  text-align: center;
+}
+#p-contact .contact-form-content .title-top-CONTACT {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 42px;
+  letter-spacing: 7px;
+}
+@media (max-width: 767px) {
+  #p-contact .contact-form-content .title-top-CONTACT {
+    font-size: 20px !important;
+  }
+}
+#p-contact .contact-form-content .title-sub-top-contact {
+  letter-spacing: 5px;
+}
+#p-contact .contact-form-content p.sub-text-contact {
+  line-height: 32px !important;
+  margin-bottom: 0px;
+}
+#p-contact .contact-form-content .light-32 {
+  line-height: 32px !important;
+}
+#p-contact .contact-form-content .drc-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-left: 33px;
+  margin-right: 50px;
+}
+@media (max-width: 767px) {
+  #p-contact .contact-form-content .drc-contact {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+  }
+}
+#p-contact .contact-form-content .drc-contact-texte {
+  margin-top: 16px;
+}
+#p-contact .contact-form-content .w-638 {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 61px;
+}
+#p-contact .contact-form-content .w-638 p {
+  line-height: 54px;
+  margin-bottom: 0px;
+}
+#p-contact .contact-form-content .w-30 {
+  width: 175px;
+  margin-right: 15px;
+}
+@media (max-width: 767px) {
+  #p-contact .contact-form-content .w-30 {
+    width: 100%;
+  }
+}
+#p-contact .contact-form-content .w-70-contact {
+  width: calc(100% - 190px);
+}
+@media (max-width: 767px) {
+  #p-contact .contact-form-content .w-70-contact {
+    width: 100%;
+  }
+}
+#p-contact .contact-form-content .w-95-contact {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+}
+#p-contact .contact-form-content .bre-contact {
+  width: 100%;
+  height: 1px;
+  background-color: #bebebe;
+  border-radius: 1px;
+  margin-top: 12px;
+}
+#p-contact .contact-form-content .bre-contact-ft {
+  width: 100%;
+  height: 1px;
+  background-color: #bebebe;
+  border-radius: 1px;
+  margin-top: 24px;
+}
+#p-contact .contact-form-content .drc-contact.text-name-contact {
+  margin-top: 16px;
+}
+#p-contact .contact-form-content .Required-item-contac {
+  background: #d85757;
+  color: white;
+  padding: 0px 6px;
+  margin-left: -6px;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+#p-contact .contact-form-content textarea.w-95-contact {
+  height: 214px;
+  padding: 15px;
+}
+@media (max-width: 767px) {
+  #p-contact .contact-form-content textarea.w-95-contact {
+    height: 170px;
+  }
+}
+#p-contact .contact-form-content textarea.w-95-contact:focus-visible {
+  outline: none;
+}
+#p-contact .contact-form-content .w-30.h-100-textea {
+  line-height: 54px !important;
+  letter-spacing: 3px !important;
+}
+#p-contact .contact-form-content .group-btn-regis-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 61px;
+  padding-bottom: 130px;
+}
+@media (max-width: 767px) {
+  #p-contact .contact-form-content .group-btn-regis-contact {
+    margin-top: 30px;
+    padding-bottom: 80px;
+  }
+}
+#p-contact .contact-form-content .group-btn-regis-contact .w-300 {
+  width: 300px;
+  background: #1e1f21;
+  display: block;
+  height: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  color: #fff;
+}
+#p-contact .contact-form-content .group-btn-regis-contact .p-dbtn-ft {
+  padding: 0px 56px 0px 66px;
+  letter-spacing: 2.6px;
+}
+
+#p-entry .registration-form-content .container-registration-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 85px;
+}
+#p-entry .registration-form-content .title-registration {
+  text-align: center;
+}
+#p-entry .registration-form-content .title-top-entry {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .title-top-entry {
+    font-size: 32px !important;
+  }
+}
+#p-entry .registration-form-content .title-sub-top-entry {
+  font-size: 18px;
+  color: #94913a;
+  font-weight: bold;
+  line-height: 42px;
+}
+#p-entry .registration-form-content .sub-text-entry {
+  margin-bottom: 0px;
+  letter-spacing: 1.7px;
+}
+#p-entry .registration-form-content .group-regisration-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#p-entry .registration-form-content .group-regisration-item .group-regisration-item p {
+  line-height: 54px !important;
+}
+#p-entry .registration-form-content .Lheight-54.kai-sa {
+  padding-right: 38px;
+}
+#p-entry .registration-form-content .w-702px {
+  width: 702px;
+  max-width: 100%;
+  margin-top: 42px;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .w-702px {
+    width: auto;
+    max-width: 100%;
+  }
+}
+#p-entry .registration-form-content .w-70 {
+  width: 70%;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .w-70 {
+    width: 100%;
+  }
+}
+#p-entry .registration-form-content .w-30 {
+  width: 32%;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .w-30 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+#p-entry .registration-form-content .w-30 .Joining-time-sub {
+  margin-right: 43px;
+  line-height: 35px;
+}
+#p-entry .registration-form-content .Joining-time-sub1 {
+  margin-right: 41px;
+  line-height: 25px;
+  letter-spacing: 1.5px;
+}
+#p-entry .registration-form-content .form-send {
+  padding: 0px 10px;
+  margin-top: 46px;
+}
+#p-entry .registration-form-content .drc-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .drc-company {
+    display: block;
+  }
+}
+#p-entry .registration-form-content .drc-company1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .drc-company1 {
+    display: block;
+  }
+}
+#p-entry .registration-form-content hr {
+  margin-bottom: 10px;
+}
+#p-entry .registration-form-content .Required-item {
+  width: 37px;
+  height: 9px;
+  background: #d85757;
+  color: #fff;
+  font-size: 13p;
+  font-size: 13px;
+  padding: 1.3px 5.7px;
+}
+#p-entry .registration-form-content p.Lheight-54 {
+  line-height: 54px;
+  margin-bottom: 0px;
+  margin-right: 24px;
+  letter-spacing: 2px;
+  max-width: 100%;
+  width: 100%;
+}
+#p-entry .registration-form-content .width-425 {
+  width: 425px;
+  height: 45px;
+  border-radius: 4px;
+  border: 1px solid #d0d0d0;
+}
+#p-entry .registration-form-content .Joining-time,
+#p-entry .registration-form-content .Retirement-time,
+#p-entry .registration-form-content .d-f,
+#p-entry .registration-form-content .Employment-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .Joining-time,
+#p-entry .registration-form-content .Retirement-time,
+#p-entry .registration-form-content .d-f,
+#p-entry .registration-form-content .Employment-status {
+    display: block;
+  }
+}
+#p-entry .registration-form-content .Employment-status {
+  margin-top: 10px;
+}
+#p-entry .registration-form-content .groub-select {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .groub-select {
+    width: 100%;
+  }
+}
+#p-entry .registration-form-content .width-50 {
+  width: 50%;
+}
+#p-entry .registration-form-content .w-40 {
+  width: 35%;
+  margin-right: 18px;
+}
+#p-entry .registration-form-content .inter-w {
+  width: 84.1%;
+  margin-left: 5px;
+  height: 33px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../images/icon-down.png") no-repeat calc(100% - 10px) center;
+}
+#p-entry .registration-form-content select.subinter-w {
+  width: 30%;
+  height: 33px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../images/icon-down.png") no-repeat calc(100% - 10px) center;
+}
+#p-entry .registration-form-content .Joining-time {
+  margin-top: 30px;
+}
+#p-entry .registration-form-content .groub-checkb {
+  width: 70%;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .groub-checkb {
+    width: 100%;
+  }
+}
+#p-entry .registration-form-content .company-name {
+  font-size: 15px;
+  margin-right: 5px;
+  letter-spacing: 1.5px;
+}
+#p-entry .registration-form-content .groub-checkb-item span {
+  font-size: 13px;
+}
+#p-entry .registration-form-content .groub-checkb-item input {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #707070;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+#p-entry .registration-form-content .groub-checkb-item input:checked {
+  background-color: blue;
+}
+#p-entry .registration-form-content .width-auto {
+  width: auto;
+}
+#p-entry .registration-form-content .group-select-file-item {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .group-select-file-item {
+    width: 100%;
+  }
+}
+#p-entry .registration-form-content .width-70 {
+  width: 70%;
+}
+#p-entry .registration-form-content .comapany-name-item {
+  width: 88%;
+  max-width: 100%;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  height: 45px;
+  margin-left: 6px;
+  margin-top: 3px;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .comapany-name-item {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+#p-entry .registration-form-content .d-f a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 186px;
+  height: 28px;
+  background: #ebebeb;
+  border-radius: 4px;
+  display: block;
+  text-align: center;
+  line-height: 28px;
+  color: #1e1f21;
+  font-size: 13px;
+  margin-right: 13px;
+  margin-bottom: 18px;
+}
+#p-entry .registration-form-content .group-btn-regis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 54px;
+}
+#p-entry .registration-form-content .group-btn-regis .w-300 {
+  width: 300px;
+  background: #1e1f21;
+  display: block;
+  height: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 7px;
+}
+#p-entry .registration-form-content .Lheight-54.kai-sa {
+  margin-right: 41px !important;
+}
+#p-entry .registration-form-content .email-item-title {
+  line-height: 54px;
+}
+#p-entry .registration-form-content span.Required-item.css-item-mail {
+  margin-left: 19px;
+}
+#p-entry .registration-form-content .css-item-mail {
+  margin-left: 8.7px !important;
+}
+#p-entry .registration-form-content .m-mail-l {
+  margin-left: 20px !important;
+  letter-spacing: 1.2px !important;
+}
+#p-entry .registration-form-content .width-css {
+  margin-top: 5px;
+}
+#p-entry .registration-form-content input.width-425.input-company {
+  margin-top: 5px;
+}
+#p-entry .registration-form-content .barie-item {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+#p-entry .registration-form-content .drc-company.content-groub-company {
+  margin-top: 19px;
+  padding: 0px 10px;
+}
+#p-entry .registration-form-content .w-100.text-aling-l {
+  text-align: left;
+  margin-left: 27px;
+  letter-spacing: 2px;
+  margin-top: 3px;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .w-100.text-aling-l {
+    margin-left: 0;
+  }
+}
+#p-entry .registration-form-content .group-select-file-item a {
+  letter-spacing: 1.4px;
+  padding-left: 3px;
+  padding-top: 1px;
+  margin-left: 2px;
+}
+#p-entry .registration-form-content .group-select-file-item span {
+  letter-spacing: 0.5px;
+}
+#p-entry .registration-form-content .drc-company.resume-item {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 0px 10px;
+}
+#p-entry .registration-form-content .w-100.resume-item-detail {
+  text-align: left;
+  margin-left: 27px;
+  letter-spacing: 2px;
+  line-height: 31px;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .w-100.resume-item-detail {
+    margin-left: 0;
+  }
+}
+#p-entry .registration-form-content .group-btn-regis {
+  margin-top: 54px;
+  margin-bottom: 135px;
+}
+#p-entry .registration-form-content .confirmation-screen {
+  padding: 0px 54px 0px 67px;
+  letter-spacing: 3px;
+}
+#p-entry .registration-form-content .drc-company.phone-number {
+  margin-top: 16px;
+}
+#p-entry .registration-form-content .groub-checkb-item span {
+  margin-right: -5px;
+}
+#p-entry .registration-form-content .groub-checkb-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 5.2px;
+  letter-spacing: 0.3px;
+}
+@media (max-width: 767px) {
+  #p-entry .registration-form-content .groub-checkb-item {
+    margin-left: 0;
+  }
+}
+#p-entry .registration-form-content .leight-H-company {
+  margin-right: 5px;
+  letter-spacing: 2px;
+}
+#p-entry .registration-form-content .Lheight-54.m-r-20 {
+  margin-right: 4px !important;
+  margin-top: 8px !important;
+}
+#p-entry .registration-form-content .barie-item.m-t-2 {
+  margin-top: 10px;
+}
+#p-entry .registration-form-content .barie-item.m-t-2-mail {
+  margin-top: 12px !important;
+  margin-bottom: 10px !important;
+}
+#p-entry .registration-form-content span.m-l-number {
+  padding-left: 7px;
+}
+#p-entry .registration-form-content .email-item-title {
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+#p-entry .registration-form-content .barie-item.css-custom-bre {
+  margin-top: 11px;
+  padding-bottom: 1px;
+}
+#p-entry .registration-form-content span.fax-impotent {
+  margin-top: 5px;
+}
+#p-entry .registration-form-content .barie-item.sub-css1 {
+  margin-top: 4px;
+}
+#p-entry .registration-form-content .barie-item.sub-css {
+  margin-top: 2px;
+}
+#p-entry .registration-form-content .yen {
+  position: relative;
+  top: 7px;
+  right: 2px;
+}
+#p-entry .registration-form-content .nen {
+  position: relative;
+  top: 7px;
+}
+
+.file-placeholder {
+  position: relative;
+  cursor: pointer;
+  width: 400px;
+  max-width: 100%;
+  height: 28px;
+  margin-bottom: 18px;
+  /*
+  you can use the label to trigger the event    */
+  /*
+  or the input file. here I use both but you don't have to   */
+}
+.file-placeholder label {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 28px;
+}
+.file-placeholder label:before {
+  content: "File";
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background-color: #c7c7c7;
+  padding: 2px 5px;
+  color: #FFF;
+}
+.file-placeholder input[type=file] {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 28px;
+  opacity: 0;
+}
+.file-placeholder .file-browse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 28px;
+}
+.file-placeholder .file-browse .file-browse-txt {
+  display: block;
+  line-height: 28px;
+  padding-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.file-placeholder .file-browse .browse {
+  background-color: #EBEBEB;
+  border-radius: 4px;
+  color: #1E1F21;
+  height: 28px;
+  line-height: 1;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 186px;
 }
