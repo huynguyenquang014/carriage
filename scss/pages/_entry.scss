@@ -261,6 +261,7 @@
         font-size: 18px;
         color: #fff;
         margin-left: 7px;
+        border: none;
       }
     }
     .Lheight-54.kai-sa {
@@ -471,4 +472,87 @@
        
   }
   
+}
+
+
+.group-select-file-item{
+  .item{
+    position: relative;
+    margin-bottom: 16px;
+    .uploadfile-custom{
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #EBEBEB;
+      border-radius: 4px;
+      color: #1E1F21;
+      height: 28px;
+      line-height: 1;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      min-width: 186px;
+      cursor: pointer;
+      z-index: 1;
+      @include br747{
+        min-width: 150px;
+      }
+      &::after{
+        content: "";
+        width: 10px;
+        height: 28px;
+        background-color: #fff;
+        left: 100%;
+        position: absolute;
+      }
+    }
+    input{
+      width: 100%;
+      height: 28px;
+      margin-left: 78px;
+      border: none;
+      @include br747{
+        margin-left: 50px;
+      }
+      input{
+        opacity: 0;
+      }
+    }
+    span{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 200px;
+      @include br747{
+        left: 165px;
+      }
+    }
+  }
+}
+
+
+.vendor_logo_hide{
+  display: inline !important;;
+  color: transparent;
+  width: 99px;
+}
+.vendor_logo{
+  display: block !important;
+  color: black;
+  width: 100%; 
+}
+.vendor_logo_hide {
+  display: inline !important;
+  ;
+  color: transparent;
+  width: 99px;
+}
+
+.vendor_logo {
+  display: block !important;
+  color: black;
+  width: 100%;
 }

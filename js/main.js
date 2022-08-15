@@ -100,6 +100,32 @@ var pmfFileupload = {
  
  $(document).ready(function() {
     pmfFileupload.init();
+
+    $(".uploadfile-custom").each(function(){
+        $(this).click(function () {
+            $(this).next().trigger('click');
+        });
+    })
+    
+
+    // set text to select company logo 
+    $(".uploadfile").each(function(){
+        // $(this).after("<span class='file_placeholder'>Select Company Logo</span>");
+        // on change
+        $(this).change(function() {
+            //  show file name 
+            if ($(this).val().length > 0) {
+                // $(".file_placeholder").empty();
+            $(this).next().empty();
+            $(this).removeClass('vendor_logo_hide').addClass('vendor_logo');
+            console.log($(this).val());
+            } else {
+            // show select company logo
+            $(this).removeClass('vendor_logo').addClass('vendor_logo_hide');
+            $(this).after("<span class='file_placeholder'>選択されていません。</span>");
+            }
+        });
+    })
  });
  
 
