@@ -57,6 +57,7 @@
                 font-family: "Roboto";
                 letter-spacing: 8px;
                 margin-bottom: 16px;
+                color: #fff;
                 @include br971 {
                     font-size: 40px;
                     line-height: 56px;
@@ -110,13 +111,16 @@
                 .alert {
                     background-color: $main-color;
                     color: #fff;
+                    width: 425px;
+                    margin-left: auto;
                     max-width: 100%;
-                    padding: 95px 32px 93px;
+                    padding: 95px 30px 93px;
                     top: -52px;
                     z-index: 1;
                     border-radius: 0;
                     border: none;
                     @include br971 {
+                        width: 100%;
                         padding: 52px 0 61px 36px;
                     }
                     @include br747 {
@@ -199,6 +203,7 @@
                             margin-bottom: 27px;
                         }
                         p {
+                            color: #949048;
                             font-size: 16px;
                             letter-spacing: 1.5px;
                         }
@@ -236,6 +241,7 @@
                     letter-spacing: 3px;
                     padding-bottom: 18px;
                     text-align: left;
+                    font-family: "Noto Sans CJK JP", sans-serif;
                     @include br971 {
                         font-size: 24px;
                         line-height: 30px;
@@ -245,10 +251,11 @@
                     }
                 }
                 p {
+                    font-family: "Noto Sans CJK JP", sans-serif;
                     text-align: left;
                     position: relative;
                     font-size: 15px;
-                    padding-left: 52px;
+                    padding-left: 47px;
                     letter-spacing: 2.2px;
                     margin-top: 27px;
                     @include br971 {
@@ -275,10 +282,13 @@
             .content {
                 font-size: 15px;
                 line-height: 30px;
-                letter-spacing: 2.4px;
+                letter-spacing: 2.25px;
                 margin-top: -16px;
                 @include br971 {
                     font-size: 13px;
+                }
+                @include br747{
+                    line-height: 26px;
                 }
             }
             .content-img {
@@ -333,9 +343,17 @@
             margin-right: auto;
             margin-top: 57px;
             .btn {
+                height: 57px;
                 font-size: 18px;
+                border-color: #C4C4C4;
+                &:hover{
+                    border-color: $main-color;
+                }
                 @include br747 {
                     font-size: 14px;
+                }
+                svg{
+                    right: 13px;
                 }
             }
         }
@@ -402,6 +420,7 @@
                             letter-spacing: 2.7px;
                             margin-top: 15px;
                             line-height: 26px;
+                            color: #1E1F21;
                             @include br971 {
                                 font-size: 13px;
                                 line-height: 18px;
@@ -414,7 +433,7 @@
                                 letter-spacing: 1.8px;
                                 margin-top: 3px;
                                 font-size: 12px;
-                                color: $main-color;
+                                color: #949048;
                                 @include br971 {
                                     font-size: 10px;
                                 }

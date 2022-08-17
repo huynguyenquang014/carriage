@@ -17,7 +17,7 @@
          padding-top: 12px !important;
         }
         .title-original-brand {
-            margin-bottom: 30px;
+            margin-bottom: 27px;
             font-size: 28px;
             letter-spacing: 2.8px;
             font-weight: bold;
@@ -26,11 +26,11 @@
             }
         }
         .leter-spc-top {
-            letter-spacing: 2.4px;
+            letter-spacing: 2.25px;
             margin-bottom: 0px;
         }
         .font-size-15 {
-            letter-spacing: 3px;
+            letter-spacing: 2.2px;
             margin-bottom: 0px;
         }
         .button-link {
@@ -41,18 +41,28 @@
             letter-spacing: 1.5px;
             font-size: 14px;
             color: #1e1f21;
+            font-family: "Yu Gothic";
+            background-color: #EFEFEF;
+            @include br747{
+                min-width: 173px;
+                width: auto;
+            }
+
         }
         .title-original-brand {
             font-size: 28px;
             font-weight: bold;
         }
         .content-btn-job {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
         .leter-spc {
             letter-spacing: 2.3px;
             margin-bottom: 0;
             line-height: 30px;
+            @include br747{
+                line-height: 26px;
+            }
         }
     
         .group-btn{

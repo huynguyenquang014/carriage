@@ -7,8 +7,8 @@
             margin: 0 5px;
             &.active a{
                 color: #fff;
-                border-color: $main-color;
-                background-color: $main-color;
+                border-color: #949048;
+                background-color: #949048;
             }
             a{
                 font-family: "Roboto";
@@ -30,8 +30,8 @@
                 }
                 &:hover{
                     color: #fff;
-                    border-color: $main-color;
-                    background-color: $main-color;
+                    border-color: #949048;
+                    background-color: #949048;
                     line{
                         stroke: #fff;
                     }

@@ -14,6 +14,7 @@
       font-size: 50px;
       font-weight: bold;
       letter-spacing: 6px;
+      margin-bottom: 3px;
       @include br747 {
         font-size: 32px !important;
       }
@@ -145,27 +146,39 @@
     }
     .width-50 {
       width: 50%;
+      @include br747{
+        width: 40%;
+      }
     }
     .w-40 {
       width: 35%;
       margin-right: 18px;
+      @include br747{
+        width: 60%;
+      }
     }
     .inter-w {
-      width: 84.1%;
+      width: 138px;
       margin-left: 5px;
       height: 33px;
       border: 1px solid #d0d0d0;
       border-radius: 4px;
       appearance: none;
       background: url("../images/icon-down.png") no-repeat calc(100% - 10px) center;
+      @include br747{
+        width: 83%;
+      }
     }
     select.subinter-w {
-      width: 30%;
+      width: 65px;
       height: 33px;
       border: 1px solid #d0d0d0;
       border-radius: 4px; 
       appearance: none;
       background: url("../images/icon-down.png") no-repeat calc(100% - 10px) center;
+      @include br747{
+        width: 80%;
+      }
     }
     .Joining-time {
       margin-top: 30px;
@@ -278,8 +291,11 @@
       margin-left: 8.7px !important;
     }
     .m-mail-l {
-      margin-left: 20px !important;
+      margin-left: 20px;
       letter-spacing: 1.2px !important;
+      @include br747{
+        margin-left: 0;
+      }
     }
     .width-css {
       margin-top: 5px;
@@ -295,6 +311,9 @@
     .drc-company.content-groub-company {
       margin-top: 19px;
       padding: 0px 10px;
+      @include br747{
+        padding: 0;
+      }
     }
     .w-100.text-aling-l {
       text-align: left;
@@ -318,6 +337,9 @@
       margin-top: 20px;
       margin-bottom: 0px;
       padding: 0px 10px;
+      @include br747{
+        padding: 0;
+      }
     }
     .w-100.resume-item-detail {
       text-align: left;
@@ -333,7 +355,7 @@
       margin-bottom: 135px;
     }
     .confirmation-screen {
-      padding: 0px 54px 0px 67px;
+      padding: 0px 15px;
       letter-spacing: 3px;
     }
     .drc-company.phone-number {
@@ -369,6 +391,9 @@
     }
     span.m-l-number {
       padding-left: 7px;
+      @include br747{
+        padding-left: 0;
+      }
     }
     .email-item-title {
       margin-bottom: 0px;
@@ -514,6 +539,7 @@
       height: 28px;
       margin-left: 78px;
       border: none;
+      overflow: hidden;
       @include br747{
         margin-left: 50px;
       }

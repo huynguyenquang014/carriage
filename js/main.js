@@ -53,6 +53,26 @@ $(document).ready(function(){
 
     //anchor link
     anchorLink(".b-service .service-box")
+
+    // customs upload file
+    $(".uploadfile-custom").each(function(){
+        $(this).click(function () {
+            $(this).next().trigger('click');
+        });
+    })
+    
+    $(".uploadfile").each(function(){
+        $(this).change(function() {
+            if ($(this).val().length > 0) {
+                $(this).next().empty();
+                $(this).removeClass('vendor_logo_hide').addClass('vendor_logo');
+                console.log($(this).val());
+            } else {
+                $(this).removeClass('vendor_logo').addClass('vendor_logo_hide');
+                $(this).after("<span class='file_placeholder'>選択されていません。</span>");
+            }
+        });
+    })
 });
 
 $(window).resize(function(){
@@ -71,62 +91,6 @@ function anchorLink(element){
 }
 
 
-var pmfFileupload = {
-    /* 
-       Pretty mother fuckin File Upload input
-    */
-    init: function() {
-       this.cacheDom();
-       this.events();
-    },
-    cacheDom: function() {
-       this.$filePlaceholder = $('.file-placeholder');
-       this.$filelabel = this.$filePlaceholder.find('label');
-       this.$fileUpload = this.$filePlaceholder.find('.fileUpload');
-       this.$fileBrowseTxt = this.$filePlaceholder.find('.file-browse-txt');
-    },
-    events: function() {
-       this.$fileUpload.on('change', this.getFileName.bind(this));
-    },
-    getFileName: function() {
-       this.newVal = this.$fileUpload.val();
-       if (this.newVal !== "") {
-          this.$fileBrowseTxt.text(this.newVal).addClass('hasValue');
-       } else {
-          this.$fileBrowseTxt.text("Select a file...");
-       }
-    }
- };
- 
- $(document).ready(function() {
-    pmfFileupload.init();
-
-    $(".uploadfile-custom").each(function(){
-        $(this).click(function () {
-            $(this).next().trigger('click');
-        });
-    })
-    
-
-    // set text to select company logo 
-    $(".uploadfile").each(function(){
-        // $(this).after("<span class='file_placeholder'>Select Company Logo</span>");
-        // on change
-        $(this).change(function() {
-            //  show file name 
-            if ($(this).val().length > 0) {
-                // $(".file_placeholder").empty();
-            $(this).next().empty();
-            $(this).removeClass('vendor_logo_hide').addClass('vendor_logo');
-            console.log($(this).val());
-            } else {
-            // show select company logo
-            $(this).removeClass('vendor_logo').addClass('vendor_logo_hide');
-            $(this).after("<span class='file_placeholder'>選択されていません。</span>");
-            }
-        });
-    })
- });
  
 
 

@@ -73,6 +73,7 @@
     }
     .drc-contact-texte {
       margin-top: 16px;
+      align-items: flex-start;
     }
     .w-638 {
       // width: 638px;
@@ -178,7 +179,7 @@
         border: none;
       }
       .p-dbtn-ft {
-        padding: 0px 56px 0px 66px;
+        padding: 0px 15px;
         letter-spacing: 2.6px;
       }
     }

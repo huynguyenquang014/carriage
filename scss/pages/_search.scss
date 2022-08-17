@@ -277,18 +277,20 @@
                         letter-spacing: 1.3px;
                         background-color: #fff;
                         border-radius: 4px;
-                        padding: 7px 14px;
+                        padding: 7px 15px;
+                        position: relative;
+                        top: -2px;
                     }
                 }
                 .box-content{
                     background-color: #fff;
-                    padding: 26px 37px 39px;
+                    padding: 26px 35px 39px;
                     @include br747{
                         padding: 20px;
                     }
                     p{
                         line-height: 30px;
-                        letter-spacing: 2px;
+                        letter-spacing: 2.2px;
                         width: 737px;
                         max-width: 100%;
                         margin-bottom: 27px;

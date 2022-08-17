@@ -59,6 +59,10 @@
             .btn {
                 height: 57px;
                 font-size: 18px;
+                border-color: #C4C4C4;
+                &:hover{
+                    border-color: $main-color;
+                }
                 svg {
                     left: 11px;
                 }

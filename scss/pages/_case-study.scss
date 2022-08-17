@@ -51,6 +51,7 @@
                 font-family: "Roboto";
                 letter-spacing: 8px;
                 margin-bottom: 16px;
+                color: #fff;
                 @include br971{
                     font-size: 40px;
                     line-height: 56px;
@@ -175,7 +176,7 @@
                 font-size: 20px;
                 font-weight: 500;
                 line-height: 37px;
-                color: $main-color;
+                color: #AAA769;
                 margin-bottom: 0;
                 letter-spacing: 3px;
                 @include br747{
@@ -238,6 +239,7 @@
         .image{
             overflow: hidden;
             img{
+                max-width: 285px;
                 transition: .4s all;
                 &:hover{
                     transform: scale(1.1);
@@ -266,7 +268,7 @@
             p{
                 font-size: 12px;
                 font-weight: 500;
-                color: $main-color;
+                color: #949048;
                 letter-spacing: 2px;
                 margin-bottom: 0;
                 @include br747{
