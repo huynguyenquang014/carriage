@@ -4144,7 +4144,7 @@ input::placeholder {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 11;
 }
 #header .header-mobile {
   display: none;
@@ -8036,9 +8036,10 @@ input::placeholder {
   letter-spacing: 1.3px;
   background-color: #fff;
   border-radius: 4px;
-  padding: 7px 15px;
+  padding: 7.5px 14px;
   position: relative;
   top: -2px;
+  width: 173px;
 }
 #p-search .b-result .result-list .result-box .box-content {
   background-color: #fff;
