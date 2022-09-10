@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    //toggle drawer
+    $(".js-toggle-drawer").click(function(){
+        $(this).toggleClass("open");
+        $(".drawer").toggleClass("open");
+    })
+
     //top
     if($('#p-top .big-mv-slider').length){
         $('#p-top .big-mv-slider').slick({
@@ -42,7 +48,6 @@ $(document).ready(function(){
             ]
         });
     }
-
 
     //pre loader
     if($('.pre-loader').length){

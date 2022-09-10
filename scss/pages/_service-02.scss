@@ -441,6 +441,7 @@
                 font-weight: 500;
                 width: calc(100% - 24px);
                 @include br747{
+                    font-size: 13px;
                     width: 100%;   
                 }
                 svg{
@@ -562,6 +563,9 @@
                     line-height: 30px;
                     width: 390px;
                     max-width: 100%;
+                    @include br747{
+                        line-height: 26px;
+                    }
                 }
             }
         }
@@ -583,6 +587,7 @@
                 font-weight: 500;
                 width: calc(100% - 24px);
                 @include br747{
+                    font-size: 13px;
                     width: 100%;   
                 }
                 svg{

@@ -34,6 +34,9 @@
             text-align: center;
             margin-top: 45px;
             line-height: 32px;
+            @include br747{
+                line-height: 26px;
+            }
         }
     }
     .b-employment {
@@ -54,7 +57,7 @@
                     border-bottom: 1px solid #E0E0E0;
                     @include br747 {
                         display: block;
-                        padding: 7px 0 15px;
+                        padding: 7px 0 15px;    
                     }
                     .label {
                         width: 108px;
@@ -65,6 +68,7 @@
                         line-height: 35px;
                         color: $main-color;
                         letter-spacing: 1.5px;
+                        font-family: 'Roboto';
                         @include br747 {
                             font-size: 12px;
                             padding-left: 0;
@@ -123,6 +127,9 @@
                 font-weight: 500;
                 width: 100%;
                 letter-spacing: 2.8px;
+                @include br747{
+                    font-size: 13px;
+                }
                 svg {
                     right: 11px;
                 }

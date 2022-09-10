@@ -12,6 +12,9 @@
         }
         p {
             line-height: 30px;
+            @include br747{
+                line-height: 26px;
+            }
         }
         .content-text-job {
          padding-top: 12px !important;
@@ -86,6 +89,7 @@
                 font-weight: 500;
                 width: calc(100% - 37px);
                 @include br747{
+                    font-size: 13px;
                     width: 100%;   
                 }
                 svg{

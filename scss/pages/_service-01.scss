@@ -446,6 +446,9 @@
                 font-weight: 500;
                 width: 100%;
                 letter-spacing: 2.8px;
+                @include br747{
+                    font-size: 13px;
+                }
                 svg{
                     right: 11px;
                 }
@@ -557,6 +560,9 @@
                     line-height: 30px;
                     width: 390px;
                     max-width: 100%;
+                    @include br747{
+                        line-height: 26px;
+                    }
                 }
             }
         }
@@ -590,6 +596,9 @@
                 font-weight: 500;
                 width: 100%;
                 letter-spacing: 2.8px;
+                @include br747{
+                    font-size: 13px;
+                }
                 svg{
                     right: 11px;
                 }

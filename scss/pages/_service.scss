@@ -154,10 +154,16 @@
             }
         }
         .service-box{
+            display: block;
             text-align: center;
             position: relative;
             height: 100%;
             padding-bottom: 19px;
+            &:hover{
+                .btn-link{
+                    opacity: 0.8;
+                }
+            }
             h3{
                 font-family: "Roboto";
                 font-size: 36px;
@@ -199,6 +205,7 @@
                 text-align: left;
                 letter-spacing: 2.2px;
                 padding: 0 40px;
+                color: #000;
                 @include br747{
                     font-size: 13px;
                     line-height: 26px;
@@ -217,8 +224,12 @@
                 position: absolute;
                 bottom: 20px;
                 right: 20px;
-                &:hover{
-                    opacity: 0.8;
+                transition: .2s;
+                @include br747{
+                    width: 21px;
+                    height: 21px;
+                    right: 0;
+                    bottom: 0;
                 }
             }
         }

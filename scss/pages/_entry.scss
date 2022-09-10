@@ -73,12 +73,14 @@
       .Joining-time-sub {
         margin-right: 43px;
         line-height: 35px;
+        color: #1E1F21;
       }
     }
     .Joining-time-sub1 {
       margin-right: 41px;
       line-height: 25px;
       letter-spacing: 1.5px;
+      color: #1E1F21;
     }
     .form-send {
       padding: 0px 10px;
@@ -193,6 +195,7 @@
       font-size: 15px;
       margin-right: 5px;
       letter-spacing: 1.5px;
+      color: #1E1F21;
     }
     .groub-checkb-item {
     }
@@ -222,6 +225,7 @@
       width: auto;
     }
     .group-select-file-item {
+      color: #1E1F21;
       width: 70%;
       display: flex;
       flex-direction: column;
@@ -275,6 +279,20 @@
         color: #fff;
         margin-left: 7px;
         border: none;
+        position: relative;
+        @include br747{
+          font-size: 13px;
+        }
+        &:hover{
+          background-color: $main-color;
+          border-color: $main-color;
+        }
+        svg{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 13px;
+        }
       }
     }
     .Lheight-54.kai-sa {
@@ -291,6 +309,7 @@
       margin-left: 8.7px !important;
     }
     .m-mail-l {
+      color: #1E1F21;
       margin-left: 20px;
       letter-spacing: 1.2px !important;
       @include br747{
@@ -320,6 +339,7 @@
       margin-left: 27px;
       letter-spacing: 2px;
       margin-top: 3px;
+      color: #1E1F21;
       @include br747{
         margin-left: 0;
       }
@@ -346,6 +366,7 @@
       margin-left: 27px;
       letter-spacing: 2px;
       line-height: 31px;
+      color: #1E1F21;
       @include br747{
         margin-left: 0;
       }
@@ -391,6 +412,7 @@
     }
     span.m-l-number {
       padding-left: 7px;
+      color: #1E1F21;
       @include br747{
         padding-left: 0;
       }
@@ -537,9 +559,12 @@
     input{
       width: 100%;
       height: 28px;
-      margin-left: 78px;
       border: none;
       overflow: hidden;
+      margin-left: 180px;
+      &::-webkit-file-upload-button{
+        display: none;
+      }
       @include br747{
         margin-left: 50px;
       }
@@ -552,6 +577,7 @@
       top: 50%;
       transform: translateY(-50%);
       left: 200px;
+      color: #1E1F21;
       @include br747{
         left: 165px;
       }

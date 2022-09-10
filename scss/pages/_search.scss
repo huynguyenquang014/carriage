@@ -154,7 +154,7 @@
                 background-color: $main-color;
                 letter-spacing: 2.8px;
                 @include br747{
-                    font-size: 14px;
+                    font-size: 13px;
                     letter-spacing: 2px;   
                 }
                 svg{
@@ -315,7 +315,7 @@
                     width: calc(100% - 20px);
                     @include br747{
                         width: 100%;
-                        font-size: 14px;
+                        font-size: 13px;
                     }
                     svg{
                         right: 11px;

@@ -53,8 +53,11 @@
       letter-spacing: 5px;
     }
     p.sub-text-contact {
-      line-height: 32px !important;
+      line-height: 32px;
       margin-bottom: 0px;
+      @include br747{
+        line-height: 26px;
+      }
     }
     .light-32 {
       line-height: 32px !important;
@@ -65,6 +68,9 @@
       justify-content: start;
       margin-left: 33px;
       margin-right: 50px;
+      p{
+        color: #1E1F21;
+      }
       @include br747{
         margin-left: 0;
         margin-right: 0;
@@ -154,6 +160,7 @@
       }
     }
     .w-30.h-100-textea {
+      color: #1E1F21;
       line-height: 54px !important;
       letter-spacing: 3px !important;
     }
@@ -177,6 +184,20 @@
         font-size: 18px;
         color: #fff;
         border: none;
+        position: relative;
+        @include br747{
+          font-size: 13px;
+        }
+        &:hover{
+          background-color: $main-color;
+          border-color: $main-color;
+        }
+        svg{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 13px;
+        }
       }
       .p-dbtn-ft {
         padding: 0px 15px;
