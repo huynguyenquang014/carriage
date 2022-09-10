@@ -382,9 +382,16 @@
             }
         }
         .banner-text-left{
+            display: block;
             position: relative;
             border: 1px solid #707070;
             margin-bottom: 50px;
+            &:hover{
+                .btn-link{
+                    border-color: $main-color;
+                    background-color: $main-color;
+                }
+            }
             @include br747{
                 margin-bottom: 18px;
             }
@@ -452,6 +459,7 @@
                 right: 60px;
                 transform: translateY(-50%);
                 z-index: 2;
+                transition: .4s;
                 @include br747{
                     top: auto;
                     bottom: 13px;
@@ -468,9 +476,16 @@
             }
         }
         .banner-center{
+            display: block;
             position: relative;
             border: 1px solid rgba(112,112,112,0.8);
             text-align: center;
+            &:hover{
+                .btn-link{
+                    border-color: $main-color;
+                    background-color: $main-color;
+                }
+            }
             &::before{
                 content: "";
                 position: absolute;
@@ -539,6 +554,7 @@
                 bottom: 55px;
                 left: 50%;
                 transform: translateX(-50%);
+                transition: .4s;
                 z-index: 2;
                 @include br971{
                     bottom: 25px;
@@ -732,14 +748,20 @@
                 .content{
                     ul{
                         li{
-                            padding: 23px 19px 17px;
-                            display: flex;
-                            align-items: center;
-                            border-bottom: 1px solid #BEBEBE;
-                            position: relative;
-                            @include br747{
-                                display: block;
-                                padding: 26px 0px 8px;
+                            a{
+                                padding: 23px 19px 17px;
+                                display: flex;
+                                align-items: center;
+                                border-bottom: 1px solid #BEBEBE;
+                                position: relative;
+                                color: #000;
+                                &:hover{
+                                    color: $main-color;
+                                }
+                                @include br747{
+                                    display: block;
+                                    padding: 26px 0px 8px;
+                                }
                             }
                             .time{
                                 font-family: "Roboto";
@@ -763,7 +785,7 @@
                                     letter-spacing: 1.2px;
                                 }
                             }
-                            a{
+                            .link{
                                 width: 30px;
                                 height: 30px;
                                 position: absolute;

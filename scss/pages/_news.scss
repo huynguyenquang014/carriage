@@ -40,17 +40,23 @@
             margin-right: auto;
             ul {
                 li {
-                    display: flex;
-                    border-bottom: 1px solid #BEBEBE;
-                    padding: 22px 0 18px;
-                    position: relative;
-                    @include br747 {
-                        display: block;
-                        padding: 7px 0 15px;
+                    a{
+                        display: flex;
+                        border-bottom: 1px solid #BEBEBE;
+                        padding: 22px 0 18px;
+                        position: relative;
+                        color: #000;
+                        &:hover{
+                            color: $main-color;
+                        }
+                        @include br747 {
+                            display: block;
+                            padding: 7px 0 15px;
+                        }
                     }
-                    .label {
-                        width: 109px;
-                        padding-left: 20px;
+                    .time {
+                        width: 89px;
+                        margin-left: 20px;
                         margin-right: 20px;
                         font-size: 14px;
                         font-weight: 400;
@@ -63,28 +69,32 @@
                             margin-bottom: -5px;
                         }
                     }
-                    .value {
+                    .text{
                         font-size: 15px;
                         line-height: 42px;
-                        letter-spacing: 1.6px;
-                        font-weight: 400;
-                        @include br747 {
+                        letter-spacing: 1.5px;
+                        @include br747{
                             font-size: 13px;
-                            line-height: 26px;
+                            margin-top: -6px;
+                            letter-spacing: 1.2px;
                         }
-                        .text {
-                            color: #000000;
-                            letter-spacing: 1.5px;
-                            @include br747 {
-                                font-size: 13px;
-                            }
-                        }
-                        a {
-                            display: flex;
-                            position: absolute;
-                            top: calc(50% + 2px);
-                            transform: translateY(-50%);
-                            right: 20px;
+                    }
+                    .link{
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        right: 9px;
+                        top: calc(50% + 2px);
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include br747{
+                            top: auto;
+                            transform: none;
+                            bottom: 14px;
+                            right: 0;
                         }
                     }
                 }

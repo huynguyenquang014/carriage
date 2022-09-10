@@ -4,41 +4,19 @@
         @include br747{
             margin-top: 50px;
         }
-        .content-b-job {
+        .inner {
             width: 698px;
             max-width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
-        p {
-            line-height: 30px;
-            @include br747{
-                line-height: 26px;
-            }
-        }
-        .content-text-job {
-         padding-top: 12px !important;
-        }
-        .title-original-brand {
-            margin-bottom: 27px;
-            font-size: 28px;
-            letter-spacing: 2.8px;
-            font-weight: bold;
-            @include br747 {
-                font-size: 20px !important;
-            }
-        }
-        .leter-spc-top {
-            letter-spacing: 2.25px;
-            margin-bottom: 0px;
-        }
-        .font-size-15 {
-            letter-spacing: 2.2px;
-            margin-bottom: 0px;
-        }
-        .button-link {
+        .job-opportunity {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             border: none;
-            width: 173px;
+            padding: 0 14px;
             height: 31px;
             border-radius: 4px;
             letter-spacing: 1.5px;
@@ -46,23 +24,20 @@
             color: #1e1f21;
             font-family: "Yu Gothic";
             background-color: #EFEFEF;
-            @include br747{
-                min-width: 173px;
-                width: auto;
-            }
-
-        }
-        .title-original-brand {
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .content-btn-job {
             margin-bottom: 10px;
         }
-        .leter-spc {
-            letter-spacing: 2.3px;
-            margin-bottom: 0;
+        .page-title {
+            margin-bottom: 39px;
+            font-size: 28px;
+            letter-spacing: 2.8px;
+            font-weight: bold;
+            @include br747 {
+                font-size: 20px;
+            }
+        }
+        p {
             line-height: 30px;
+            letter-spacing: 2.25px;
             @include br747{
                 line-height: 26px;
             }
@@ -104,33 +79,6 @@
                     }
                 }
             }
-        }
-        .btn-left-job {
-            background: #94913a;
-            color: white;
-            font-size: 18px;
-            display: block;
-            text-align: center;
-            letter-spacing: 3.4px;
-            line-height: 57px;
-        }
-        .btn-left-job1 {
-            background: #ffffff;
-            color: #94913a;
-            border: 1px solid #c4c4c4;
-            font-size: 18px;
-            display: block;
-            text-align: center;
-            letter-spacing: 3.4px;
-            line-height: 57px;
-        }
-        .p-d-lr {
-            padding: 0px 72px 0px 83px;
-            letter-spacing: 2.7px;
-        }
-        .p-lr0 {
-            padding: 0px 29px 0px 43.1px;
-            letter-spacing: 2.5px;
         }
     }
 }

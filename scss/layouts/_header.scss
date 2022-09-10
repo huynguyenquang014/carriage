@@ -64,18 +64,10 @@
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 11;
+        z-index: 12;
         @include br747{
             width: 60px;
             height: 60px;
-            background-color: #1E1F21;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: fixed;
-            top: 0;
-            right: 0;
-            z-index: 10;
         }
         .icon-close{
             display: none;
@@ -106,7 +98,7 @@
         height: 100%;
         background-color: #AAA769;
         transition: .5s;
-        z-index: 9;
+        z-index: 11;
         &.open{
             opacity: 1;
             visibility: visible;

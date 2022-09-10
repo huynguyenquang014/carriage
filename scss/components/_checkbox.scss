@@ -22,6 +22,11 @@
 						border: solid #C4C4C4;
 						border-width: 0 2px 2px 0;
 						transform: rotate(45deg) translateY(-50%);
+						@include br747{
+							top: calc(50% - 2px);
+							width: 5px;
+							height: 10px;
+						}
 					}
 				}
 			}

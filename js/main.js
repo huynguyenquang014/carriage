@@ -1,6 +1,7 @@
 $(document).ready(function(){
     //toggle drawer
-    $(".js-toggle-drawer").click(function(){
+    $(".js-toggle-drawer").click(function(e){
+        e.preventDefault();
         $(this).toggleClass("open");
         $(".drawer").toggleClass("open");
     })
