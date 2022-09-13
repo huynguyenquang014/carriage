@@ -11300,6 +11300,7 @@ input::placeholder {
           transform: translateY(-50%);
   left: 200px;
   color: #1E1F21;
+  word-break: break-all;
 }
 @media (max-width: 767px) {
   .group-select-file-item .item span {

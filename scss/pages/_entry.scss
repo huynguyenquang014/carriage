@@ -598,7 +598,8 @@
       top: 50%;
       transform: translateY(-50%);
       left: 200px;
-      color: #1E1F21;
+      color: #1E1F21; 
+      word-break: break-all;
       @include br747{
         left: 165px;
       }
