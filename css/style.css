@@ -11273,7 +11273,7 @@ input::placeholder {
 }
 @media (max-width: 767px) {
   .group-select-file-item .item input {
-    margin-left: 50px;
+    margin-left: 150px;
   }
 }
 .group-select-file-item .item input input {
