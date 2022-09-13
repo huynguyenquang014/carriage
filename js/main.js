@@ -3,9 +3,11 @@ $(document).ready(function(){
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) ){
         $('body').addClass('ios-device');
+        $(".op").append( "iOS" );
     }
     else if( userAgent.match( /Android/i ) ){
         $('body').addClass('android-device');
+        $(".op").append( "Android" );
     }
     else{
         $('body').addClass('other-device');
