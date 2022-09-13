@@ -521,7 +521,27 @@
   
 }
 
-
+.android-device{
+  .group-select-file-item .item input{
+    &::-webkit-file-upload-button{
+      display: none;
+    }
+  }
+}
+.ios-device{
+  .group-select-file-item .item input{
+    &.vendor_logo::-webkit-file-upload-button{
+        width: 0;
+        height: 0;
+        padding: 0;
+        border: none;
+    }
+    &.vendor_logo_hide::-webkit-file-upload-button{
+      width: auto;
+      height: auto;
+  }
+  }
+}
 .group-select-file-item{
   .item{
     position: relative;
@@ -562,13 +582,6 @@
       border: none;
       overflow: hidden;
       margin-left: 180px;
-      &::-webkit-file-upload-button{
-        // display: none;
-        width: 0;
-        height: 0;
-        padding: 0;
-        border: none;
-      }
       @include br747{
         margin-left: 150px;
       }

@@ -1,4 +1,16 @@
 $(document).ready(function(){
+    //check device
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) ){
+        $('body').addClass('ios-device');
+    }
+    else if( userAgent.match( /Android/i ) ){
+        $('body').addClass('android-device');
+    }
+    else{
+        $('body').addClass('other-device');
+    }
+
     //toggle drawer
     $(".js-toggle-drawer").click(function(e){
         e.preventDefault();
@@ -79,6 +91,7 @@ $(document).ready(function(){
             }
         });
     })
+
 });
 
 $(window).resize(function(){
@@ -97,7 +110,7 @@ function anchorLink(element){
 }
 
 
- 
+
 
 
 

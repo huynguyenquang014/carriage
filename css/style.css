@@ -11227,6 +11227,21 @@ input::placeholder {
   min-width: 186px;
 }
 
+.android-device .group-select-file-item .item input::-webkit-file-upload-button {
+  display: none;
+}
+
+.ios-device .group-select-file-item .item input.vendor_logo::-webkit-file-upload-button {
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: none;
+}
+.ios-device .group-select-file-item .item input.vendor_logo_hide::-webkit-file-upload-button {
+  width: auto;
+  height: auto;
+}
+
 .group-select-file-item .item {
   position: relative;
   margin-bottom: 16px;
@@ -11276,12 +11291,6 @@ input::placeholder {
   border: none;
   overflow: hidden;
   margin-left: 180px;
-}
-.group-select-file-item .item input::-webkit-file-upload-button {
-  width: 0;
-  height: 0;
-  padding: 0;
-  border: none;
 }
 @media (max-width: 767px) {
   .group-select-file-item .item input {
