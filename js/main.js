@@ -83,10 +83,12 @@ $(document).ready(function(){
     
     $(".uploadfile").each(function(){
         $(this).change(function() {
+            
             if ($(this).val().length > 0) {
                 $(this).next().empty();
                 $(this).removeClass('vendor_logo_hide').addClass('vendor_logo');
-                console.log($(this).val());
+                var fileName = $(this)[0].files[0].name;
+                $(this).after(`<span class='file_placeholder'>${fileName}</span>`);
             } else {
                 $(this).removeClass('vendor_logo').addClass('vendor_logo_hide');
                 $(this).after("<span class='file_placeholder'>選択されていません。</span>");
