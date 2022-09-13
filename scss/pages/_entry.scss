@@ -562,9 +562,9 @@
       border: none;
       overflow: hidden;
       margin-left: 180px;
-      &::-webkit-file-upload-button{
-        display: none;
-      }
+      // &::-webkit-file-upload-button{
+      //   display: none;
+      // }
       @include br747{
         margin-left: 150px;
       }

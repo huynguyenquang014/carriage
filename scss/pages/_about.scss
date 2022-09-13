@@ -250,6 +250,7 @@
                             font-size: 12px;
                             padding-left: 0;
                             margin-bottom: -5px;
+                            font-weight: 600;
                         }
                     }
                     .value{
@@ -259,6 +260,12 @@
                         @include br747{
                             font-size: 13px;
                             line-height: 26px;   
+                        }
+                        br.sp{
+                            display: none;
+                            @include br747{
+                                display: inline-block;
+                            }
                         }
                         span{
                             font-size: 14px;

@@ -5937,6 +5937,7 @@ input::placeholder {
     font-size: 12px;
     padding-left: 0;
     margin-bottom: -5px;
+    font-weight: 600;
   }
 }
 #p-about .b-outline .inner ul li .value {
@@ -5948,6 +5949,14 @@ input::placeholder {
   #p-about .b-outline .inner ul li .value {
     font-size: 13px;
     line-height: 26px;
+  }
+}
+#p-about .b-outline .inner ul li .value br.sp {
+  display: none;
+}
+@media (max-width: 767px) {
+  #p-about .b-outline .inner ul li .value br.sp {
+    display: inline-block;
   }
 }
 #p-about .b-outline .inner ul li .value span {
@@ -11267,9 +11276,6 @@ input::placeholder {
   border: none;
   overflow: hidden;
   margin-left: 180px;
-}
-.group-select-file-item .item input::-webkit-file-upload-button {
-  display: none;
 }
 @media (max-width: 767px) {
   .group-select-file-item .item input {
